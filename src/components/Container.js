@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Containerr = styled.nav`
   min-height: 100vh;
-  background-color: #f0e6d7;
+  background-color: #0d2938;
 `;
 
 const Container = ({ children }) => {

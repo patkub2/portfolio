@@ -1,4 +1,4 @@
-import { colors } from "./colors"
+import { colors } from "./colors";
 
 export const theme = {
   colors,
@@ -7,8 +7,11 @@ export const theme = {
     regular: 400,
     bold: 800,
   },
+  family: {
+    main: "Poppins",
+  },
   media: {
     phone: "@media (max-width: 800px)",
     desktop: "@media (max-width: 1024px)",
   },
-}
+};

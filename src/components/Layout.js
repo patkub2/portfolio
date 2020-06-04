@@ -5,8 +5,8 @@ import { theme } from "../utils/theme";
 const GlobalStyle = createGlobalStyle`
   body {
     max-height:100vh;
-    color: ${({ theme }) => theme.colors.font};
-    font-family: Rockwell;
+    color: ${({ theme }) => theme.colors.white};
+    font-family: Poppins;
   margin: 0;
   padding: 0;
   }

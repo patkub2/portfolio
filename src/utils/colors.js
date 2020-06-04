@@ -1,6 +1,6 @@
 export const colors = {
-  white: "#FFFBEF",
-  primary: "#3EC2E9",
-  dark: "#182421",
-  font: "black",
+  white: "#FFFCED",
+  orange: "#F77F00",
+  dark: "#0D2938",
+  darker: "#05222E",
 };

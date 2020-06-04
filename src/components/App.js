@@ -1,12 +1,16 @@
 import React from "react";
 import Layout from "./Layout";
 import Container from "./Container";
+import Body from "./Body";
+import NavBar from "./NavBar";
+import { StickyContainer, Sticky } from "react-sticky";
 
 function App() {
   return (
     <Layout>
       <Container>
-        <div>conf</div>
+        <NavBar />
+        <Body />
       </Container>
     </Layout>
   );
