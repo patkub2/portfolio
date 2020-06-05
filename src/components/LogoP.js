@@ -1,9 +1,8 @@
-import styled from "styled-components";
+import React from "react";
+import logo from "../img/logo.png";
 
-const LogoP = styled.img`
-  display: flex;
-  align-items: center;
-  width: 40px;
-`;
+const LogoP = (p) => {
+  return <img src={logo} width={p.width} />;
+};
 
 export default LogoP;

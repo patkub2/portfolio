@@ -8,7 +8,8 @@ const LogoWraper = styled.nav`
   display: flex;
   align-items: center;
   font-size: 24px;
-  margin-right: 20px;
+  padding-left: 20px;
+
   img {
     margin-right: 20px;
   }
@@ -17,7 +18,8 @@ const LogoWraper = styled.nav`
 const Logo = () => {
   return (
     <LogoWraper>
-      <LogoP src={logo} alt=""></LogoP>Patryk Kubala
+      <LogoP width="35px" />
+      Patryk Kubala
     </LogoWraper>
   );
 };
