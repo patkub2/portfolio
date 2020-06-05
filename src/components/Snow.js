@@ -25,7 +25,7 @@ const SnowFlake = styled.p`
       opacity: 0.5;
     }
 
-    90% {
+    95% {
       opacity: 0.5;
     }
     100% {
@@ -63,7 +63,7 @@ class Snow extends React.Component {
       let style = {
         animationDelay,
       };
-      return <Snowflake key={i} id={i} style={style} />;
+      return <Snowflake key={i + Math.random()} id={i} style={style} />;
     });
   };
 

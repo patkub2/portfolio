@@ -9,6 +9,14 @@ const MainTextContainer = styled.div`
   justify-content: center;
   margin-bottom: 15vh;
   flex-flow: column wrap;
+  z-index: 9;
+  position: relative;
+  background: radial-gradient(
+    62% 62% at 50.05% 50%,
+    ${({ theme }) => theme.colors.dark} 1.56%,
+    rgba(13, 41, 56, 0.851852) 83.85%,
+    rgba(13, 41, 56, 0) 100%
+  );
 `;
 
 const Title = styled.p`
