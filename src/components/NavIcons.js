@@ -6,7 +6,7 @@ import flag from "../img/flag.png";
 import mail from "../img/mail.svg";
 
 const NavIconsContainer = styled.div`
-  border: 1px solid green; /* green*/
+  /*border: 1px solid green; /* green*/
   min-height: 50px;
   display: flex;
   align-items: center;

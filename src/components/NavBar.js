@@ -4,10 +4,13 @@ import Logo from "./Logo";
 import NavIcons from "./NavIcons";
 
 const NavBarContainer = styled.div`
-  border: 1px solid red; /* RED*/
-  min-height: 50px;
+  /*border: 1px solid red; /* RED*/
+  min-height: 5vh;
   display: flex;
   justify-content: space-between;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
 `;
 
 function NavBar() {

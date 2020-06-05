@@ -4,7 +4,7 @@ import logo from "../img/logo.png";
 import LogoP from "./LogoP";
 
 const LogoWraper = styled.nav`
-  border: 1px solid yellow; /* RED*/
+  /*border: 1px solid yellow; /* RED*/
   display: flex;
   align-items: center;
   font-size: 24px;

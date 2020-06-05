@@ -3,7 +3,7 @@ import styled from "styled-components";
 import LogoP from "./LogoP";
 
 const MainTextContainer = styled.div`
-  border: 1px solid white; /* RED*/
+  /*border: 1px solid white; /* RED*/
   display: flex;
   align-items: center;
   justify-content: center;
