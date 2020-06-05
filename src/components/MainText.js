@@ -7,7 +7,7 @@ const MainTextContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 15vh;
+  margin-bottom: 5vh;
   flex-flow: column wrap;
   z-index: 9;
   position: relative;
