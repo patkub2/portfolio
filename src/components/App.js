@@ -4,7 +4,7 @@ import Container from "./Container";
 import Main from "./Main";
 import Snow from "./Snow";
 import NavBar from "./NavBar";
-import Space from "./Space";
+import Me from "./Me";
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
         <Snow />
         <NavBar />
         <Main />
-        <Space />
+        <Me />
       </Container>
     </Layout>
   );
