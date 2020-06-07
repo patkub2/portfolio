@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import LogoP from "./LogoP";
+import Orange from "./Orange";
 
 const MainTextContainer = styled.div`
   /*border: 1px solid white; /* RED*/
@@ -35,9 +36,6 @@ const Info = styled.p`
   color: ${({ theme }) => theme.colors.white};
 `;
 
-const Orange = styled.a`
-  color: ${({ theme }) => theme.colors.orange};
-`;
 function MainText() {
   return (
     <MainTextContainer>
