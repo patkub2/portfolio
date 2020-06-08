@@ -3,23 +3,23 @@ import styled from "styled-components";
 import MeText from "./MeText";
 import About from "./About";
 
-import css from "../img/css.png";
-import html from "../img/html.png";
-import figma from "../img/figma.png";
-import gatsby from "../img/gatsby.png";
-import git from "../img/git.png";
-import js from "../img/js.png";
-import ps from "../img/ps.png";
-import react from "../img/react.png";
-import sass from "../img/sass.png";
-import wp from "../img/wp.png";
+import css from "../img/icons/css.png";
+import html from "../img/icons/html.png";
+import figma from "../img/icons/figma.png";
+import gatsby from "../img/icons/gatsby.png";
+import git from "../img/icons/git.png";
+import js from "../img/icons/js.png";
+import ps from "../img/icons/ps.png";
+import react from "../img/icons/react.png";
+import sass from "../img/icons/sass.png";
+import wp from "../img/icons/wp.png";
 import Image from "./Image";
 import Tech from "./Tech";
 import Orange from "./Orange";
 
 const MeContainer = styled.div`
-  border: 1px solid yellow; /* RED*/
-  min-height: 70vh;
+  /*border: 1px solid yellow; /* RED*/
+  min-height: 60vh;
   display: flex;
   font-size: 18px;
   align-items: center;
@@ -49,16 +49,16 @@ function Me() {
         <p> Szczegóły zamieściłem w CV oraz na moim profilu Linkedin.</p>
       </About>
       <Tech>
-        <Image src={css} />
-        <Image src={html} />
-        <Image src={figma} />
-        <Image src={gatsby} />
-        <Image src={git} />
-        <Image src={js} />
-        <Image src={ps} />
-        <Image src={react} />
-        <Image src={sass} />
-        <Image src={wp} />
+        <Image src={css} name="css" />
+        <Image src={html} name="html" />
+        <Image src={js} name="js" />
+        <Image src={react} name="react" />
+        <Image src={gatsby} name="gatsby" />
+        <Image src={git} name="git" />
+        <Image src={ps} name="ps" />
+        <Image src={sass} name="sass" />
+        <Image src={figma} name="figma" />
+        <Image src={wp} name="wp" />
       </Tech>
     </MeContainer>
   );

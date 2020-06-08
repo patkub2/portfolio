@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Orange from "./Orange";
 
 const AboutContainer = styled.div`
-  border: 1px solid green; /* RED*/
+  /*border: 1px solid green; /* RED*/
   min-height: 30vh;
   width: 800px;
   display: column flex;

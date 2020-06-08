@@ -5,6 +5,7 @@ import Main from "./Main";
 import Snow from "./Snow";
 import NavBar from "./NavBar";
 import Me from "./Me";
+import Projects from "./Projects";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <NavBar />
         <Main />
         <Me />
+        <Projects />
       </Container>
     </Layout>
   );

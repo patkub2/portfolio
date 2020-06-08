@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Orange from "./Orange";
 
 const MeTextContainer = styled.div`
-  border: 1px solid red; /* RED*/
+  /*border: 1px solid red; /* RED*/
   min-height: 10vh;
   width: 100%;
   display: flex;
