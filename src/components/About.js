@@ -5,7 +5,7 @@ import Orange from "./Orange";
 const AboutContainer = styled.div`
   border: 1px solid green; /* RED*/
   min-height: 30vh;
-  width: 50%;
+  width: 800px;
   display: column flex;
   align-items: center;
   justify-content: center;

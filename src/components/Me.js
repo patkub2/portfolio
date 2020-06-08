@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import MeText from "./MeText";
 import About from "./About";
+
 import css from "../img/css.png";
 import html from "../img/html.png";
 import figma from "../img/figma.png";
@@ -14,13 +15,15 @@ import sass from "../img/sass.png";
 import wp from "../img/wp.png";
 import Image from "./Image";
 import Tech from "./Tech";
+import Orange from "./Orange";
 
 const MeContainer = styled.div`
   border: 1px solid yellow; /* RED*/
   min-height: 70vh;
   display: flex;
+  font-size: 18px;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-around;
   flex-flow: wrap;
   background-color: ${({ theme }) => theme.colors.darker};
 `;
@@ -31,15 +34,17 @@ function Me() {
       <MeText />
       <About>
         <p>
-          Cześć nazywam Patryk i jestem Front-end Developerem z Katowic.
+          <Orange>
+            Cześć nazywam Patryk i jestem Front-end Developerem z Katowic.
+          </Orange>{" "}
           Ukończyłem technikum na kierunku Informatyka w Raciborzu gdzie
           nauczyłem się podstaw programowania. Od roku rozwijam się w kierunku
-          front-end developmentu wykorzystując React’a.
+          front-end developmentu wykorzystując <Orange>React’a</Orange>.
         </p>
         <p>
           {" "}
-          Swobodnie posługuję się językiem angielskim (w mowie i w piśmie)oraz
-          niemieckim w stopni średnio-zaawansowanym.
+          Swobodnie posługuję się językiem <Orange>angielskim</Orange> (w mowie
+          i w piśmie)oraz niemieckim w stopni średnio-zaawansowanym.
         </p>
         <p> Szczegóły zamieściłem w CV oraz na moim profilu Linkedin.</p>
       </About>

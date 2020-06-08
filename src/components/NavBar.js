@@ -7,6 +7,7 @@ const NavBarContainer = styled.div`
   /*border: 1px solid red; /* RED*/
   min-height: 5vh;
   display: flex;
+  padding-top: 5px;
   justify-content: space-between;
   position: -webkit-sticky; /* Safari */
   position: sticky;

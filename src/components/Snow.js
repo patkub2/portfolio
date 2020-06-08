@@ -40,7 +40,7 @@ const Cont = styled.div`
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  padding-top: 100vh;
+  padding-top: 98vh;
   overflow: hidden;
   z-index: 8;
   height: 0vh;

@@ -7,7 +7,7 @@ const LogoWraper = styled.nav`
   /*border: 1px solid yellow; /* RED*/
   display: flex;
   align-items: center;
-  font-size: 24px;
+  font-size: 22px;
   padding-left: 20px;
 
   img {
