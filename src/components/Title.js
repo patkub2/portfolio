@@ -1,9 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import Orange from "./Orange";
 
-const MeTextContainer = styled.div`
-  /*border: 1px solid red; /* RED*/
+const TitleContainer = styled.div`
+  border: 1px solid red; /* RED*/
   min-height: 10vh;
   width: 100%;
   display: flex;
@@ -11,20 +10,18 @@ const MeTextContainer = styled.div`
   justify-content: center;
 `;
 
-const Title = styled.p`
+const TitleText = styled.p`
   font-size: 52px;
   line-height: 10px;
   color: ${({ theme }) => theme.colors.white};
 `;
 
-function MeText() {
+function Title({ children }) {
   return (
-    <MeTextContainer>
-      <Title>
-        O <Orange>mnie</Orange>
-      </Title>
-    </MeTextContainer>
+    <TitleContainer>
+      <TitleText>{children}</TitleText>
+    </TitleContainer>
   );
 }
 
-export default MeText;
+export default Title;
