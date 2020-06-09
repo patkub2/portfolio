@@ -4,7 +4,7 @@ import Title from "./Title";
 import Orange from "./Orange";
 
 const ProjectsTemplateContainer = styled.div`
-  border: 3px solid #f77f00;
+  border: 2px solid #f77f00;
   box-sizing: border-box;
   border-radius: 20px;
   min-height: 450px;
@@ -24,14 +24,14 @@ const PictureBorder = styled.div`
 `;
 
 const Pic = styled.img`
+  border: 2px solid #f77f00;
   box-sizing: border-box;
-  border-radius: 20px;
+  border-radius: 15px;
   height: 200px;
   width: 100%;
 `;
 
 const ProjectsTitle = styled.p`
-  padding-top: 20px;
   padding-left: 20px;
   /*border: 1px solid yellow; /* RED*/
   font-size: 30px;
