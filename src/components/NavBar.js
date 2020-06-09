@@ -12,6 +12,7 @@ const NavBarContainer = styled.div`
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
+  z-index: 80;
 `;
 
 function NavBar() {

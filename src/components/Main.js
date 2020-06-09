@@ -15,12 +15,19 @@ const MainContainer = styled.div`
   position: relative;
 `;
 
+const Img = styled.img`
+  max-width: 500px;
+  @media only screen and (max-width: 600px) {
+    width: 90vw;
+  }
+`;
+
 function Main() {
   return (
     <MainContainer>
       <MainText />
       <Arrow />
-      <img src={comp} />
+      <Img src={comp} />
     </MainContainer>
   );
 }

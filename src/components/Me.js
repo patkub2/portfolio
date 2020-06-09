@@ -41,9 +41,15 @@ function Me() {
             <Orange>
               Cześć nazywam Patryk i jestem Front-end Developerem z Katowic.
             </Orange>{" "}
-            Ukończyłem technikum na kierunku Informatyka w Raciborzu gdzie
-            nauczyłem się podstaw programowania. Od roku rozwijam się w kierunku
-            front-end developmentu wykorzystując <Orange>React’a</Orange>.
+            Ukończyłem technikum na kierunku Informatycznym w Raciborzu gdzie
+            zdobyłem niezbedną podstawową wiedzę odnośnie komputerów , sieci i
+            programowania. Od roku pasjonuje front-end developerka w której się
+            także rozwijam wykorzystując głównie <Orange>React’a</Orange>.
+          </p>
+          <p>
+            {" "}
+            Moim hobby jest także grafika kompuerowa i edycja za pomocą
+            photoshopa{" "}
           </p>
           <p>
             {" "}

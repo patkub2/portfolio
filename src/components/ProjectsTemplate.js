@@ -4,6 +4,7 @@ import Title from "./Title";
 import Orange from "./Orange";
 
 const ProjectsTemplateContainer = styled.div`
+  margin-top: 10px;
   border: 2px solid #f77f00;
   box-sizing: border-box;
   border-radius: 20px;
@@ -15,6 +16,9 @@ const ProjectsTemplateContainer = styled.div`
   flex-direction: column;
   flex-flow: wrap;
   background-color: ${({ theme }) => theme.colors.dark};
+  @media only screen and (max-width: 400px) {
+    width: 100vw;
+  }
 `;
 
 const PictureBorder = styled.div`
@@ -36,13 +40,13 @@ const ProjectsTitle = styled.p`
   /*border: 1px solid yellow; /* RED*/
   font-size: 30px;
 `;
-const ProjectsText = styled.a`
+const ProjectsText = styled.p`
   /*border: 1px solid yellow; /* RED*/
   font-size: 16px;
   height: 160px;
   padding: 0 12px;
 `;
-const TechnoDiv = styled.a`
+const TechnoDiv = styled.p`
   /*border: 1px solid yellow; /* RED*/
 
   display: flex;

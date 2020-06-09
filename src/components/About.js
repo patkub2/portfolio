@@ -8,5 +8,9 @@ const AboutContainer = styled.div`
   align-items: center;
   justify-content: center;
   padding: 5vh;
+
+  @media only screen and (max-width: 760px) {
+    width: 100vw;
+  }
 `;
 export default AboutContainer;

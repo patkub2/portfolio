@@ -15,11 +15,24 @@ const LogoWraper = styled.nav`
   }
 `;
 
+const Text = styled.p`
+  @media only screen and (max-width: 500px) {
+    display: none;
+  }
+`;
+const SmallText = styled.p`
+  display: none;
+  @media only screen and (max-width: 500px) {
+    display: block;
+  }
+`;
+
 const Logo = () => {
   return (
     <LogoWraper>
       <LogoP width="35px" />
-      Patryk Kubala
+      <Text>Patryk Kubala</Text>
+      <SmallText>PK</SmallText>
     </LogoWraper>
   );
 };
