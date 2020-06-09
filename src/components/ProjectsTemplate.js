@@ -35,20 +35,31 @@ const ProjectsTitle = styled.p`
   padding-left: 20px;
   /*border: 1px solid yellow; /* RED*/
   font-size: 30px;
-  color: ${({ theme }) => theme.colors.white};
-`;
-const ProjectsTitleOrange = styled.a`
-  /*border: 1px solid yellow; /* RED*/
-  font-size: 30px;
-  color: ${({ theme }) => theme.colors.orange};
 `;
 const ProjectsText = styled.a`
   /*border: 1px solid yellow; /* RED*/
   font-size: 16px;
   height: 160px;
   padding: 0 12px;
-  color: ${({ theme }) => theme.colors.white};
 `;
+const TechnoDiv = styled.a`
+  /*border: 1px solid yellow; /* RED*/
+
+  display: flex;
+  justify-content: flex-end;
+  flex-flow: wrap;
+  margin: 10px;
+  width: 100%;
+`;
+
+const Techno = styled.a`
+  border: 1px solid ${({ theme }) => theme.colors.white};
+  border-radius: 10px;
+  font-size: 12px;
+  padding: 5px 10px;
+  margin-right: 10px;
+`;
+
 function ProjectsTemplate(p) {
   return (
     <ProjectsTemplateContainer>
@@ -60,6 +71,9 @@ function ProjectsTemplate(p) {
         <Orange>{p.titleorange ? p.titleorange : null}</Orange>
       </ProjectsTitle>
       <ProjectsText>{p.children ? p.children : null}</ProjectsText>
+      <TechnoDiv>
+        <Techno>React</Techno>
+      </TechnoDiv>
     </ProjectsTemplateContainer>
   );
 }
