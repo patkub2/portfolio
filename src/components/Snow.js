@@ -21,21 +21,22 @@ const SnowFlake = styled.p`
     0% {
       opacity: 0;
     }
-    10% {
+    30% {
       opacity: 0.5;
     }
 
-    95% {
+    90% {
       opacity: 0.5;
     }
     100% {
-      transform: translate(0, -90vh);
+      transform: translate(0, -100vh);
       opacity: 0;
     }
   }
 `;
 
 const Cont = styled.div`
+  /*border: 1px solid yellow; /* RED*/
   position: absolute;
   justify-content: space-between;
   margin: 0;
