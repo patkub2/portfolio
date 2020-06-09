@@ -72,7 +72,10 @@ function ProjectsTemplate(p) {
       </ProjectsTitle>
       <ProjectsText>{p.children ? p.children : null}</ProjectsText>
       <TechnoDiv>
-        <Techno>React</Techno>
+        {p.tech1 ? <Techno>{p.tech1}</Techno> : null}
+        {p.tech2 ? <Techno>{p.tech2}</Techno> : null}
+        {p.tech3 ? <Techno>{p.tech3}</Techno> : null}
+        {p.tech4 ? <Techno>{p.tech4}</Techno> : null}
       </TechnoDiv>
     </ProjectsTemplateContainer>
   );

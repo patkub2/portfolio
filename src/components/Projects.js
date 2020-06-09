@@ -26,7 +26,14 @@ function Projects() {
         Moje <Orange>Projekty</Orange>{" "}
       </Title>
       <Border>
-        <ProjectsTemplate title="Book" titleorange="tifly" img={booktifly}>
+        <ProjectsTemplate
+          title="Book"
+          titleorange="tifly"
+          img={booktifly}
+          tech1="react"
+          tech2="API"
+          tech3="RWD"
+        >
           Prosta aplikacja pozwalająca na wyszukiwanie książek i otwieranie ich
           z pomocą google books. Aplikacja została stworzona w React i
           wykorzystuje API google books. Do stylowania użyłem styled components.
@@ -35,6 +42,9 @@ function Projects() {
           title="Fast Typing"
           titleorange=" Game"
           img={fasttyping}
+          tech1="react"
+          tech2="hooks"
+          tech3="RWD"
         >
           Pierwszy więkrzy projekt z wykorzystaniem narzędzi React Hooks. Gra
           która ma za zadanie zmierzenie twojego czasu pisania oraz pokazanie
@@ -44,10 +54,12 @@ function Projects() {
           title="Coffe"
           titleorange="Republic"
           img={cofferepublic}
+          tech1="react"
+          tech2="gatsby"
+          tech3="RWD"
         >
-          Pierwszy więkrzy projekt z wykorzystaniem narzędzi React Hooks. Gra
-          która ma za zadanie zmierzenie twojego czasu pisania oraz pokazanie
-          paru motywujących losowych cytatów.
+          Przykładowa strona kawiarni wykonana z GatsbyJS do stylowania
+          wykorzystaniem styled components ubogacone w flex box'a i css grid'a
         </ProjectsTemplate>
       </Border>
     </ProjectsContainer>
