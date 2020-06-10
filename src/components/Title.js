@@ -12,7 +12,7 @@ const TitleContainer = styled.div`
 
 const TitleText = styled.p`
   font-size: 52px;
-  line-height: 10px;
+  text-align: center;
   color: ${({ theme }) => theme.colors.white};
 `;
 

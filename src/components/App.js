@@ -6,6 +6,7 @@ import Snow from "./Snow";
 import NavBar from "./NavBar";
 import Me from "./Me";
 import Projects from "./Projects";
+import Contact from "./Contact";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Main />
         <Me />
         <Projects />
+        <Contact />
       </Container>
     </Layout>
   );

@@ -22,17 +22,21 @@ const MainTextContainer = styled.div`
 
 const Title = styled.p`
   font-size: 52px;
-  line-height: 10px;
+  text-align: center;
   color: ${({ theme }) => theme.colors.white};
 `;
 const Bottom = styled.p`
   font-size: 30px;
   line-height: 20px;
+
+  text-align: center;
   color: ${({ theme }) => theme.colors.orange};
 `;
 const Info = styled.p`
   font-size: 20px;
   line-height: 0px;
+
+  text-align: center;
   color: ${({ theme }) => theme.colors.white};
 `;
 

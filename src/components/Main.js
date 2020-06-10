@@ -6,7 +6,7 @@ import Arrow from "./Arrow";
 
 const MainContainer = styled.div`
   /*border: 1px solid yellow; /* RED*/
-  min-height: 92vh;
+  min-height: 90vh;
   display: flex;
   align-items: center;
   justify-content: flex-end;

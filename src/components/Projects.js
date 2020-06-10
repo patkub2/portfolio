@@ -10,6 +10,7 @@ import Border from "./Border";
 
 const ProjectsContainer = styled.div`
   /*border: 1px solid yellow; /* RED*/
+  padding-bottom: 30px;
   min-height: 85vh;
   display: flex;
   font-size: 18px;

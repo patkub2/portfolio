@@ -4,7 +4,7 @@ import Title from "./Title";
 import Orange from "./Orange";
 
 const ProjectsTemplateContainer = styled.div`
-  margin-top: 10px;
+  margin-top: 20px;
   border: 2px solid #f77f00;
   box-sizing: border-box;
   border-radius: 20px;
@@ -18,6 +18,7 @@ const ProjectsTemplateContainer = styled.div`
   background-color: ${({ theme }) => theme.colors.dark};
   @media only screen and (max-width: 400px) {
     width: 100vw;
+    border: 1px solid #f77f00;
   }
 `;
 
@@ -33,6 +34,9 @@ const Pic = styled.img`
   border-radius: 15px;
   height: 200px;
   width: 100%;
+  @media only screen and (max-width: 400px) {
+    border: 1px solid #f77f00;
+  }
 `;
 
 const ProjectsTitle = styled.p`
