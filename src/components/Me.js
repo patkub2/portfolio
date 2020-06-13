@@ -20,7 +20,7 @@ import Border from "./Border";
 
 const MeContainer = styled.div`
   /*border: 1px solid yellow; /* RED*/
-  min-height: 65vh;
+  min-height: 60vh;
   display: flex;
   font-size: 18px;
   align-items: center;

@@ -8,11 +8,11 @@ const AboutContainer = styled.div`
   align-items: center;
   justify-content: center;
   padding: 2vh;
-  text-align: justify;
   font-size: 16px;
 
-  @media only screen and (max-width: 760px) {
+  @media only screen and (max-width: 700px) {
     width: 100vw;
+    font-size: 13px;
   }
 `;
 export default AboutContainer;

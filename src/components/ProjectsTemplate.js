@@ -4,21 +4,24 @@ import Title from "./Title";
 import Orange from "./Orange";
 
 const ProjectsTemplateContainer = styled.div`
-  margin-top: 20px;
+  margin: 20px;
   border: 2px solid #f77f00;
   box-sizing: border-box;
   border-radius: 20px;
   min-height: 450px;
-  width: 400px;
+  width: 370px;
   display: flex;
   font-size: 18px;
   justify-content: flex-start;
   flex-direction: column;
   flex-flow: wrap;
   background-color: ${({ theme }) => theme.colors.dark};
+
   @media only screen and (max-width: 400px) {
     width: 100vw;
     border: 1px solid #f77f00;
+    margin: 0px;
+    margin-top: 20px;
   }
 `;
 

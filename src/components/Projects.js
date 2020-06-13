@@ -6,6 +6,7 @@ import ProjectsTemplate from "./ProjectsTemplate";
 import booktifly from "../img/booktifly.JPG";
 import cofferepublic from "../img/cofferepublic.JPG";
 import fasttyping from "../img/fasttyping.JPG";
+import portfolio from "../img/portfolio.JPG";
 import Border from "./Border";
 
 const ProjectsContainer = styled.div`
@@ -55,6 +56,17 @@ function Projects() {
           title="Coffe"
           titleorange="Republic"
           img={cofferepublic}
+          tech1="react"
+          tech2="gatsby"
+          tech3="RWD"
+        >
+          Przykładowa strona kawiarni wykonana z GatsbyJS do stylowania
+          wykorzystaniem styled components ubogacone w flex box'a i css grid'a
+        </ProjectsTemplate>
+        <ProjectsTemplate
+          title="Port"
+          titleorange="folio"
+          img={portfolio}
           tech1="react"
           tech2="gatsby"
           tech3="RWD"

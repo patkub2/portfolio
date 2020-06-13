@@ -10,11 +10,16 @@ const ImgCont = styled.div`
   align-items: flex-start;
   justify-content: space-around;
   flex-flow: wrap;
+  @media only screen and (max-width: 700px) {
+    width: 50px;
+    margin: 5px 10px;
+    min-height: 0px;
+  }
 `;
 
 const Img = styled.img`
   /*border: 1px solid pink; /* RED*/
-  width: 60px;
+  width: 90%;
   margin: 10px 15px;
   filter: saturate(0);
   transition: 0.7s;

@@ -7,12 +7,15 @@ const NavBarContainer = styled.div`
   /*border: 1px solid red; /* RED*/
   min-height: 5vh;
   display: flex;
-  padding-top: 1vh;
+  padding-top: 0vh;
   justify-content: space-between;
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
   z-index: 80;
+  @media only screen and (max-width: 700px) {
+    background-color: ${({ theme }) => theme.colors.dark};
+  }
 `;
 
 function NavBar() {
