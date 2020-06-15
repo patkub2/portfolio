@@ -11,7 +11,7 @@ const TitleContainer = styled.div`
 `;
 
 const TitleText = styled.p`
-  font-size: 52px;
+  font-size: 48px;
   text-align: center;
   color: ${({ theme }) => theme.colors.white};
 `;

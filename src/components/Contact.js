@@ -2,11 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import Title from "./Title";
 import Orange from "./Orange";
-import ProjectsTemplate from "./ProjectsTemplate";
-import booktifly from "../img/booktifly.JPG";
-import cofferepublic from "../img/cofferepublic.JPG";
-import fasttyping from "../img/fasttyping.JPG";
 import Border from "./Border";
+import Email from "./Email";
 
 const ContactContainer = styled.div`
   /*border: 1px solid yellow; /* RED*/
@@ -25,6 +22,9 @@ function Contact() {
       <Title>
         Kon<Orange>takt</Orange>{" "}
       </Title>
+      <Border>
+        <Email />
+      </Border>
     </ContactContainer>
   );
 }
