@@ -1,12 +1,12 @@
 import React from "react";
 import Layout from "./Layout";
 import Container from "./Container";
-import Main from "./Main";
+import Main from "./Main/Main";
 import Snow from "./Snow";
-import NavBar from "./NavBar";
-import Me from "./Me";
-import Projects from "./Projects";
-import Contact from "./Contact";
+import NavBar from "./NavBar/NavBar";
+import Me from "./Me/Me";
+import Projects from "./Projects/Projects";
+import Contact from "./Contact/Contact";
 
 function App() {
   return (

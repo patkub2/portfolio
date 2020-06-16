@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import MainText from "./MainText";
-import comp from "../img/comp2.png";
+import comp from "../../img/comp2.png";
 import Arrow from "./Arrow";
 
 const MainContainer = styled.div`

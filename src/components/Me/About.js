@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 const AboutContainer = styled.div`
   /*border: 1px solid green; /* RED*/

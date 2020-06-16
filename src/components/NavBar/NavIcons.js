@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import linkedin from "../img/linkedin.svg";
-import github from "../img/github.svg";
-import flag from "../img/flag.png";
-import mail from "../img/mail.svg";
+import linkedin from "../../img/linkedin.svg";
+import github from "../../img/github.svg";
+import flag from "../../img/flag.png";
+import mail from "../../img/mail.svg";
 
 const NavIconsContainer = styled.div`
   /*border: 1px solid green; /* green*/

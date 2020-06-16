@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import Title from "./Title";
-import Orange from "./Orange";
+import Title from "../Title";
+import Orange from "../Orange";
 
 const ProjectsTemplateContainer = styled.div`
   margin: 20px;

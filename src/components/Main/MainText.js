@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import LogoP from "./LogoP";
-import Orange from "./Orange";
+import LogoP from "../LogoP";
+import Orange from "../Orange";
 
 const MainTextContainer = styled.div`
   /*border: 1px solid white; /* RED*/

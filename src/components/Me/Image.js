@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import useToggler from "./useToggler";
+import useToggler from "../useToggler";
 const ImgCont = styled.div`
   /*border: 1px solid pink; /* RED*/
   margin: 10px 15px;

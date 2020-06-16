@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import arrow from "../img/arrow.png";
+import arrow from "../../img/arrow.png";
 
 const ArrowContainer = styled.div`
   /*border: 1px solid yellow; /* RED*/

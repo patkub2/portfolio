@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import Title from "./Title";
-import Orange from "./Orange";
+import Title from "../Title";
+import Orange from "../Orange";
 import ProjectsTemplate from "./ProjectsTemplate";
-import booktifly from "../img/booktifly.JPG";
-import cofferepublic from "../img/cofferepublic.JPG";
-import fasttyping from "../img/fasttyping.JPG";
-import portfolio from "../img/portfolio.JPG";
-import Border from "./Border";
+import booktifly from "../../img/booktifly.JPG";
+import cofferepublic from "../../img/cofferepublic.JPG";
+import fasttyping from "../../img/fasttyping.JPG";
+import portfolio from "../../img/portfolio.JPG";
+import Border from "../Border";
 
 const ProjectsContainer = styled.div`
   /*border: 1px solid yellow; /* RED*/

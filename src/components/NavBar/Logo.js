@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import logo from "../img/logo.png";
-import LogoP from "./LogoP";
+import LogoP from "../LogoP";
 
 const LogoWraper = styled.nav`
   /*border: 1px solid yellow; /* RED*/

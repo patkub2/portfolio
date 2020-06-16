@@ -1,12 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
-import Orange from "./Orange";
-import mail from "../img/mail.png";
-import useToggler from "./useToggler";
-import github from "../img/github.svg";
-import linkedin from "../img/linkedin.svg";
-import facebook from "../img/facebook.png";
-import { useState } from "react";
+import mail from "../../img/mail.png";
+import useToggler from "../useToggler";
+import github from "../../img/github.svg";
+import linkedin from "../../img/linkedin.svg";
+import facebook from "../../img/facebook.png";
 
 const EmailContainer = styled.div`
   margin: 0px;
@@ -40,7 +38,7 @@ const Mail = styled.input`
   padding-left: 50px;
   ::placeholder {
     color: ${({ theme }) => theme.colors.white};
-    font-family: Poppins;
+    font-family: ${({ theme }) => theme.family.main};
   }
 `;
 
@@ -58,7 +56,7 @@ const Message = styled.textarea`
   background-color: ${({ theme }) => theme.colors.dark};
   ::placeholder {
     color: ${({ theme }) => theme.colors.white};
-    font-family: Poppins;
+    font-family: ${({ theme }) => theme.family.main};
   }
 `;
 

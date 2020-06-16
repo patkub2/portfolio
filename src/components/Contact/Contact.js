@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import Title from "./Title";
-import Orange from "./Orange";
-import Border from "./Border";
+import Title from "../Title";
+import Orange from "../Orange";
+import Border from "../Border";
 import Email from "./Email";
 
 const ContactContainer = styled.div`

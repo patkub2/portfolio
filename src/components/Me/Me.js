@@ -3,20 +3,20 @@ import styled from "styled-components";
 import About from "./About";
 import Image from "./Image";
 import Tech from "./Tech";
-import Orange from "./Orange";
+import Orange from "../Orange";
 
-import css from "../img/icons/css.png";
-import html from "../img/icons/html.png";
-import figma from "../img/icons/figma.png";
-import gatsby from "../img/icons/gatsby.png";
-import git from "../img/icons/git.png";
-import js from "../img/icons/js.png";
-import ps from "../img/icons/ps.png";
-import react from "../img/icons/react.png";
-import sass from "../img/icons/sass.png";
-import wp from "../img/icons/wp.png";
-import Title from "./Title";
-import Border from "./Border";
+import css from "../../img/icons/css.png";
+import html from "../../img/icons/html.png";
+import figma from "../../img/icons/figma.png";
+import gatsby from "../../img/icons/gatsby.png";
+import git from "../../img/icons/git.png";
+import js from "../../img/icons/js.png";
+import ps from "../../img/icons/ps.png";
+import react from "../../img/icons/react.png";
+import sass from "../../img/icons/sass.png";
+import wp from "../../img/icons/wp.png";
+import Title from "../Title";
+import Border from "../Border";
 
 const MeContainer = styled.div`
   /*border: 1px solid yellow; /* RED*/
