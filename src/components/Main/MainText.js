@@ -3,6 +3,9 @@ import styled from "styled-components";
 import LogoP from "../LogoP";
 import Orange from "../Orange";
 
+import { useSelector } from "react-redux";
+import { change } from "../../redux";
+
 const MainTextContainer = styled.div`
   /*border: 1px solid white; /* RED*/
   display: flex;
@@ -41,6 +44,22 @@ const Info = styled.p`
 `;
 
 function MainText() {
+  const language = useSelector((state) => state);
+  if (language) {
+    return (
+      <MainTextContainer>
+        <LogoP width="70px" />
+        <Title>Patryk Kubala</Title>
+        <Bottom>Front-end Developer</Bottom>
+        <Info>
+          You can find more information <Orange>about me</Orange>
+        </Info>
+        <Info>
+          and <Orange>projects</Orange> below
+        </Info>
+      </MainTextContainer>
+    );
+  }
   return (
     <MainTextContainer>
       <LogoP width="70px" />

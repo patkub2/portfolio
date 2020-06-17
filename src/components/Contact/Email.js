@@ -7,6 +7,7 @@ import linkedin from "../../img/linkedin.svg";
 import facebook from "../../img/facebook.png";
 
 const EmailContainer = styled.div`
+  /*border: 1px solid green; /* green*/
   margin: 0px;
   min-height: 450px;
   width: 600px;
@@ -16,7 +17,8 @@ const EmailContainer = styled.div`
   align-content: center;
   justify-content: center;
 
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 600px) {
+    width: 100%;
   }
 `;
 

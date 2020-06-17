@@ -2,8 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import linkedin from "../../img/linkedin.svg";
 import github from "../../img/github.svg";
-import flag from "../../img/flag.png";
+import flagen from "../../img/flagEN.gif";
+import flagpl from "../../img/flagPL.gif";
 import mail from "../../img/mail.svg";
+
+import { useSelector, useDispatch } from "react-redux";
+import { change } from "../../redux";
 
 const NavIconsContainer = styled.div`
   /*border: 1px solid green; /* green*/
@@ -15,6 +19,14 @@ const NavIconsContainer = styled.div`
 
 const Icon = styled.img`
   width: 30px;
+  height: 30px;
+  margin: 0 10px;
+`;
+
+const IconFlag = styled.img`
+  /*border: 1px solid green; /* green*/
+  width: 30px;
+  height: 20px;
   margin: 0 10px;
 `;
 
@@ -37,9 +49,15 @@ const Button = styled.button`
 `;
 
 function NavIcons() {
+  const language = useSelector((state) => state);
+  const dispatch = useDispatch();
+
   return (
     <NavIconsContainer>
-      <Icon src={flag} />
+      <IconFlag
+        onClick={() => dispatch(change())}
+        src={language ? flagpl : flagen}
+      />
       <Icon src={linkedin} />
       <Icon src={github} />
       <Icon src={mail} />
