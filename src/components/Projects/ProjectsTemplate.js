@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Title from "../Title";
 import Orange from "../Orange";
+import github from "../../img/github.svg";
 
 const ProjectsTemplateContainer = styled.div`
   margin: 20px;
@@ -22,23 +23,6 @@ const ProjectsTemplateContainer = styled.div`
     border: 1px solid #f77f00;
     margin: 0px;
     margin-top: 20px;
-  }
-`;
-
-const PictureBorder = styled.div`
-  box-sizing: border-box;
-  border-radius: 20px;
-  background-color: ${({ theme }) => theme.colors.dark};
-`;
-
-const Pic = styled.img`
-  border: 2px solid #f77f00;
-  box-sizing: border-box;
-  border-radius: 15px;
-  height: 200px;
-  width: 100%;
-  @media only screen and (max-width: 400px) {
-    border: 1px solid #f77f00;
   }
 `;
 
@@ -71,11 +55,73 @@ const Techno = styled.a`
   margin-right: 10px;
 `;
 
+const Overlay = styled.div`
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: ${({ theme }) => theme.colors.dark};
+
+  border-radius: 20px;
+`;
+
+const PictureBorder = styled.div`
+  position: relative;
+  box-sizing: border-box;
+  border-radius: 20px;
+  background-color: ${({ theme }) => theme.colors.dark};
+  :hover ${Overlay} {
+    opacity: 0.9;
+  }
+`;
+
+const Pic = styled.img`
+  border: 2px solid #f77f00;
+  box-sizing: border-box;
+  border-radius: 15px;
+  height: 200px;
+  width: 100%;
+  @media only screen and (max-width: 400px) {
+    border: 1px solid #f77f00;
+  }
+`;
+
+const Text = styled.div`
+  color: ${({ theme }) => theme.colors.white};
+  font-size: 24px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+  img {
+    padding: 10px 200px;
+    height: 70px;
+  }
+`;
+
 function ProjectsTemplate(p) {
   return (
     <ProjectsTemplateContainer>
       <PictureBorder>
         <Pic src={p.img ? p.img : null} />
+        <Overlay>
+          <Text>
+            <a href="/">LIVE</a>
+            <img src={github}></img>
+          </Text>
+        </Overlay>
       </PictureBorder>
       <ProjectsTitle>
         {p.title ? p.title : null}
