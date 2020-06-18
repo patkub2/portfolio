@@ -4,7 +4,6 @@ import LogoP from "../LogoP";
 import Orange from "../Orange";
 
 import { useSelector } from "react-redux";
-import { change } from "../../redux";
 
 const MainTextContainer = styled.div`
   /*border: 1px solid white; /* RED*/
@@ -52,10 +51,10 @@ function MainText() {
         <Title>Patryk Kubala</Title>
         <Bottom>Front-end Developer</Bottom>
         <Info>
-          You can find more information <Orange>about me</Orange>
+          More information <Orange>about me</Orange>
         </Info>
         <Info>
-          and <Orange>projects</Orange> below
+          and <Orange>projects</Orange> you can find below
         </Info>
       </MainTextContainer>
     );
