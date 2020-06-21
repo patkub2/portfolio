@@ -103,10 +103,16 @@ const Text = styled.div`
   a {
     color: inherit;
     text-decoration: inherit;
+    :hover {
+      font-size: 22px;
+    }
   }
   img {
-    padding: 10px 120px;
-    height: 70px;
+    margin: 10px 120px;
+    height: 50px;
+    :hover {
+      height: 45px;
+    }
   }
 `;
 
@@ -117,8 +123,10 @@ function ProjectsTemplate(p) {
         <Pic src={p.img ? p.img : null} />
         <Overlay>
           <Text>
-            <a href="/">LIVE</a>
-            <a href="/">
+            <a href={p.livelink} target="_blank">
+              LIVE
+            </a>
+            <a href={p.githublink} target="_blank">
               <img src={github}></img>
             </a>
           </Text>

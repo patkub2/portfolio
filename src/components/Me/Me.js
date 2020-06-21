@@ -4,6 +4,8 @@ import About from "./About";
 import Image from "./Image";
 import Tech from "./Tech";
 import Orange from "../Orange";
+import Title from "../Title";
+import Border from "../Border";
 
 import css from "../../img/icons/css.png";
 import html from "../../img/icons/html.png";
@@ -15,8 +17,8 @@ import ps from "../../img/icons/ps.png";
 import react from "../../img/icons/react.png";
 import sass from "../../img/icons/sass.png";
 import wp from "../../img/icons/wp.png";
-import Title from "../Title";
-import Border from "../Border";
+import webpack from "../../img/icons/webpack.png";
+import redux from "../../img/icons/redux.png";
 
 import { useSelector } from "react-redux";
 
@@ -74,6 +76,8 @@ function Me() {
             <Image src={sass} name="Sass" />
             <Image src={figma} name="Figma" />
             <Image src={wp} name="Wordpress" />
+            <Image src={redux} name="Redux" />
+            <Image src={webpack} name="Webpack" />
           </Tech>
         </Border>
       </MeContainer>
@@ -118,6 +122,8 @@ function Me() {
           <Image src={sass} name="Sass" />
           <Image src={figma} name="Figma" />
           <Image src={wp} name="Wordpress" />
+          <Image src={redux} name="Redux" />
+          <Image src={webpack} name="Webpack" />
         </Tech>
       </Border>
     </MeContainer>

@@ -21,6 +21,7 @@ const Icon = styled.img`
   width: 30px;
   height: 30px;
   margin: 0 10px;
+  cursor: pointer;
 `;
 
 const IconFlag = styled.img`
@@ -28,6 +29,7 @@ const IconFlag = styled.img`
   width: 30px;
   height: 20px;
   margin: 0 10px;
+  cursor: pointer;
 `;
 
 const Button = styled.button`

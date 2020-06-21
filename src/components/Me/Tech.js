@@ -1,11 +1,10 @@
-import React from "react";
 import styled from "styled-components";
 
 const Tech = styled.div`
   /*border: 1px solid green; /* RED*/
   min-height: 20vh;
   padding: 10px;
-  width: 550px;
+  width: 600px;
   display: flex;
   align-items: center;
   justify-content: center;

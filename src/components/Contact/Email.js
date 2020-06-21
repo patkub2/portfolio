@@ -67,7 +67,8 @@ const Button = styled.button`
   color: white;
   border: 2px solid ${({ theme }) => theme.colors.orange};
   outline: none;
-  padding: 15px 50px;
+  padding: 15px 0px;
+  width: 150px;
   text-align: center;
   text-decoration: none;
   display: inline-block;

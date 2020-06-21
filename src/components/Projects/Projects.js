@@ -35,6 +35,8 @@ function Projects() {
           tech1="react"
           tech2="API"
           tech3="RWD"
+          livelink="/"
+          githublink="https://github.com/patkub2/booktifly"
         >
           Prosta aplikacja pozwalająca na wyszukiwanie książek i otwieranie ich
           z pomocą google books. Aplikacja została stworzona w React i
@@ -47,6 +49,8 @@ function Projects() {
           tech1="react"
           tech2="hooks"
           tech3="RWD"
+          livelink="/"
+          githublink="https://github.com/patkub2/fast-typing-game"
         >
           Pierwszy więkrzy projekt z wykorzystaniem narzędzi React Hooks. Gra
           która ma za zadanie zmierzenie twojego czasu pisania oraz pokazanie
@@ -59,20 +63,24 @@ function Projects() {
           tech1="react"
           tech2="gatsby"
           tech3="RWD"
+          livelink="/"
+          githublink="https://github.com/patkub2/coffe-shop"
         >
           Przykładowa strona kawiarni wykonana z GatsbyJS do stylowania
-          wykorzystaniem styled components ubogacone w flex box'a i css grid'a
+          wykorzystaniem styled components ubogacone w flex box'a i css grid'a.
         </ProjectsTemplate>
         <ProjectsTemplate
           title="Port"
           titleorange="folio"
           img={portfolio}
           tech1="react"
-          tech2="gatsby"
+          tech2="redux"
           tech3="RWD"
+          livelink="/"
+          githublink="https://github.com/patkub2/portfolio"
         >
-          Przykładowa strona kawiarni wykonana z GatsbyJS do stylowania
-          wykorzystaniem styled components ubogacone w flex box'a i css grid'a
+          Strona portfolio wykonana w reactcie. Strona posiada funkcję zmiany
+          języka bez odświeżania stronyktóra została wykonana z pomocą reduxa.
         </ProjectsTemplate>
       </Border>
     </ProjectsContainer>
