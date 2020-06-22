@@ -6,6 +6,8 @@ import github from "../../img/github.svg";
 import linkedin from "../../img/linkedin.svg";
 import facebook from "../../img/facebook.png";
 
+import { useSelector } from "react-redux";
+
 const EmailContainer = styled.div`
   /*border: 1px solid green; /* green*/
   margin: 0px;
@@ -111,12 +113,39 @@ function Email() {
     setText("Facebook");
     toggle();
   }
-
+  const language = useSelector((state) => state);
+  if (language) {
+    return (
+      <EmailContainer>
+        <Mail type="email" placeholder="Your email"></Mail>
+        <Message placeholder="How can I help you?"></Message>
+        <Button>{show ? <div>{text}</div> : <div>Send</div>}</Button>
+        <IconsContainer>
+          <Icon
+            src={linkedin}
+            onMouseEnter={handleMouseHoverLinkedIn}
+            onMouseLeave={handleMouseHoverLinkedIn}
+          />
+          <Icon
+            src={github}
+            onMouseEnter={handleMouseHoverGithub}
+            onMouseLeave={handleMouseHoverGithub}
+          />
+          <Icon
+            src={facebook}
+            onMouseEnter={handleMouseHoverFacebook}
+            onMouseLeave={handleMouseHoverFacebook}
+          />
+        </IconsContainer>
+      </EmailContainer>
+    );
+  }
   return (
     <EmailContainer>
       <Mail type="email" placeholder="Twój email"></Mail>
       <Message placeholder="W czym mogę Ci pomóc?"></Message>
       <Button>{show ? <div>{text}</div> : <div>Wyślij</div>}</Button>
+
       <IconsContainer>
         <Icon
           src={linkedin}

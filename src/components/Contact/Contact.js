@@ -5,6 +5,8 @@ import Orange from "../Orange";
 import Border from "../Border";
 import Email from "./Email";
 
+import { useSelector } from "react-redux";
+
 const ContactContainer = styled.div`
   /*border: 1px solid yellow; /* RED*/
   min-height: 85vh;
@@ -17,6 +19,19 @@ const ContactContainer = styled.div`
 `;
 
 function Contact() {
+  const language = useSelector((state) => state);
+  if (language) {
+    return (
+      <ContactContainer>
+        <Title>
+          Con<Orange>tact</Orange>{" "}
+        </Title>
+        <Border>
+          <Email />
+        </Border>
+      </ContactContainer>
+    );
+  }
   return (
     <ContactContainer>
       <Title>

@@ -112,7 +112,8 @@ function Me() {
             {" "}
             Na co dzień zajmuję się także grafiką. Głównie malowaniem i tzw.
             photobashingiem. Ale także projektowaniem przeróżnych stron,
-            wizytówek , plakatów i logo.{" "}
+            wizytówek , plakatów i logo. Częś projektów można znaleźć{" "}
+            <Orange>tutaj</Orange>.{" "}
           </p>
           <p>
             {" "}
@@ -120,7 +121,8 @@ function Me() {
             mowie i w piśmie)oraz niemieckim w stopni średnio-zaawansowanym.
           </p>
           <p>
-            Resztę informacji zamieściłem w CV oraz na moim profilu Linkedin.
+            Resztę informacji zamieściłem w CV oraz na moim profilu{" "}
+            <Orange>Linkedin</Orange>.
           </p>
         </About>
         <Tech>

@@ -7,6 +7,7 @@ import NavBar from "./NavBar/NavBar";
 import Me from "./Me/Me";
 import Projects from "./Projects/Projects";
 import Contact from "./Contact/Contact";
+import Footer from "./Footer/Footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Me />
         <Projects />
         <Contact />
+        <Footer />
       </Container>
     </Layout>
   );
