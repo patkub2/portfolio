@@ -47,23 +47,31 @@ function Me() {
               <Orange>
                 Hi, I'm Patryk and I'm a Front-end Developer from Katowice.
               </Orange>{" "}
-              I graduated from the technical college in Computer Science in
-              Racibórz where I gained the necessary basic knowledge about
-              computers, networks and programming. For a year I have been
-              passionate about front-end developeloping and I develop in it
-              mainly using <Orange>React</Orange>.
+              I graduated from IT school in Racibórz, where I gained the
+              necessary basic knowledge about computers, networks and
+              programming. A year ago I decided to delve into the worl of
+              front-end development and to this day I am still absorbed by it,
+              mainly thanks to the
+              <Orange> React</Orange> library.
             </p>
             <p>
               {" "}
-              Moim hobby jest także grafika kompuerowa i edycja za pomocą
-              photoshopa{" "}
+              I also do computer graphics as a hobby. Mainly painting and
+              so-called photobashing. But also designing websites, business
+              cards, posters and logos. Some of the project you can find{" "}
+              <Orange> here</Orange>.{" "}
             </p>
             <p>
               {" "}
-              Swobodnie posługuję się językiem <Orange>angielskim</Orange> (w
-              mowie i w piśmie)oraz niemieckim w stopni średnio-zaawansowanym.
+              I speak <Orange>English</Orange> fluently (spoken and written) and
+              German at intermediate levels.
             </p>
-            <p> Szczegóły zamieściłem w CV oraz na moim profilu Linkedin.</p>
+            <p>
+              {" "}
+              I included the rest of the details in my CV and on my{" "}
+              <Orange>Linkedin </Orange>
+              profile.
+            </p>
           </About>
           <Tech>
             <Image src={css} name="Css" />
@@ -95,21 +103,25 @@ function Me() {
               Cześć nazywam Patryk i jestem Front-end Developerem z Katowic.
             </Orange>{" "}
             Ukończyłem technikum na kierunku Informatycznym w Raciborzu gdzie
-            zdobyłem niezbedną podstawową wiedzę odnośnie komputerów , sieci i
-            programowania. Od roku pasjonuje mnie front-end developerka i to w
-            niej się rozwijam wykorzystując głównie <Orange>React’a</Orange>.
+            zdobyłem niezbędną podstawową wiedzę odnośnie komputerów, sieci i
+            programowania. Roku temu postanowiłem zagłębić się front-end
+            developerkę i to w niej do dzisiaj się rozwijam korzystając głownie
+            z biblioteki <Orange>React’a</Orange>.
           </p>
           <p>
             {" "}
-            Moim hobby jest także grafika kompuerowa i edycja za pomocą
-            photoshopa{" "}
+            Na co dzień zajmuję się także grafiką. Głównie malowaniem i tzw.
+            photobashingiem. Ale także projektowaniem przeróżnych stron,
+            wizytówek , plakatów i logo.{" "}
           </p>
           <p>
             {" "}
             Swobodnie posługuję się językiem <Orange>angielskim</Orange> (w
             mowie i w piśmie)oraz niemieckim w stopni średnio-zaawansowanym.
           </p>
-          <p> Szczegóły zamieściłem w CV oraz na moim profilu Linkedin.</p>
+          <p>
+            Resztę informacji zamieściłem w CV oraz na moim profilu Linkedin.
+          </p>
         </About>
         <Tech>
           <Image src={css} name="Css" />

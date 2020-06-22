@@ -81,10 +81,6 @@ const PictureBorder = styled.div`
 `;
 
 const Pic = styled.img`
-<<<<<<< HEAD
-=======
-  border: 2px solid #f77f00;
->>>>>>> b35c534251a4d64c16ff3f2d3018319b5ec2df3e
   box-sizing: border-box;
   border-radius: 15px;
   height: 200px;
@@ -107,7 +103,6 @@ const Text = styled.div`
   a {
     color: inherit;
     text-decoration: inherit;
-<<<<<<< HEAD
     :hover {
       font-size: 22px;
     }
@@ -118,12 +113,6 @@ const Text = styled.div`
     :hover {
       height: 45px;
     }
-=======
-  }
-  img {
-    padding: 10px 200px;
-    height: 70px;
->>>>>>> b35c534251a4d64c16ff3f2d3018319b5ec2df3e
   }
 `;
 
@@ -134,17 +123,12 @@ function ProjectsTemplate(p) {
         <Pic src={p.img ? p.img : null} />
         <Overlay>
           <Text>
-<<<<<<< HEAD
             <a href={p.livelink} target="_blank">
               LIVE
             </a>
             <a href={p.githublink} target="_blank">
               <img src={github}></img>
             </a>
-=======
-            <a href="/">LIVE</a>
-            <img src={github}></img>
->>>>>>> b35c534251a4d64c16ff3f2d3018319b5ec2df3e
           </Text>
         </Overlay>
       </PictureBorder>
