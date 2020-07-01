@@ -78,14 +78,12 @@ function Me() {
             <Image src={html} name="Html" />
             <Image src={js} name="Js" />
             <Image src={react} name="React" />
-            <Image src={gatsby} name="Gatsby" />
             <Image src={git} name="Git" />
             <Image src={ps} name="Photoshop" />
             <Image src={sass} name="Sass" />
             <Image src={figma} name="Figma" />
             <Image src={wp} name="Wordpress" />
             <Image src={redux} name="Redux" />
-            <Image src={webpack} name="Webpack" />
           </Tech>
         </Border>
       </MeContainer>
@@ -100,7 +98,7 @@ function Me() {
         <About>
           <p>
             <Orange>
-              Cześć nazywam Patryk i jestem Front-end Developerem z Katowic.
+              Cześć mam na imię Patryk i jestem Front-end Developerem z Katowic.
             </Orange>{" "}
             Ukończyłem technikum na kierunku Informatycznym w Raciborzu gdzie
             zdobyłem niezbędną podstawową wiedzę odnośnie komputerów, sieci i
@@ -112,13 +110,13 @@ function Me() {
             {" "}
             Na co dzień zajmuję się także grafiką. Głównie malowaniem i tzw.
             photobashingiem. Ale także projektowaniem przeróżnych stron,
-            wizytówek , plakatów i logo. Częś projektów można znaleźć{" "}
+            wizytówek , plakatów i logo. Część projektów można znaleźć{" "}
             <Orange>tutaj</Orange>.{" "}
           </p>
           <p>
             {" "}
             Swobodnie posługuję się językiem <Orange>angielskim</Orange> (w
-            mowie i w piśmie)oraz niemieckim w stopni średnio-zaawansowanym.
+            mowie i w piśmie) oraz niemieckim w stopni średnio-zaawansowanym.
           </p>
           <p>
             Resztę informacji zamieściłem w CV oraz na moim profilu{" "}
@@ -130,14 +128,12 @@ function Me() {
           <Image src={html} name="Html" />
           <Image src={js} name="Js" />
           <Image src={react} name="React" />
-          <Image src={gatsby} name="Gatsby" />
           <Image src={git} name="Git" />
           <Image src={ps} name="Photoshop" />
           <Image src={sass} name="Sass" />
           <Image src={figma} name="Figma" />
           <Image src={wp} name="Wordpress" />
           <Image src={redux} name="Redux" />
-          <Image src={webpack} name="Webpack" />
         </Tech>
       </Border>
     </MeContainer>

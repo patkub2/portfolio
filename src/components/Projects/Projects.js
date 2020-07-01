@@ -39,7 +39,7 @@ function Projects() {
             tech1="react"
             tech2="API"
             tech3="RWD"
-            livelink="/"
+            livelink="https://patkub2-booktlify.netlify.app"
             githublink="https://github.com/patkub2/booktifly"
           >
             A simple application that allows you to search for books and open
@@ -54,7 +54,7 @@ function Projects() {
             tech1="react"
             tech2="hooks"
             tech3="RWD"
-            livelink="/"
+            livelink="https://patkub2-fast-typing-game.netlify.app"
             githublink="https://github.com/patkub2/fast-typing-game"
           >
             The first major project using React Hooks tools. A game that is
@@ -68,7 +68,7 @@ function Projects() {
             tech1="react"
             tech2="gatsby"
             tech3="RWD"
-            livelink="/"
+            livelink="https://patkub2-coffeshop.netlify.app"
             githublink="https://github.com/patkub2/coffe-shop"
           >
             An example of a cafe site made of GatsbyJS for styling I used
@@ -106,7 +106,7 @@ function Projects() {
           tech1="react"
           tech2="API"
           tech3="RWD"
-          livelink="/"
+          livelink="https://patkub2-booktlify.netlify.app"
           githublink="https://github.com/patkub2/booktifly"
         >
           Prosta aplikacja pozwalająca na wyszukiwanie książek i otwieranie ich
@@ -121,7 +121,7 @@ function Projects() {
           tech1="react"
           tech2="hooks"
           tech3="RWD"
-          livelink="/"
+          livelink="https://patkub2-fast-typing-game.netlify.app"
           githublink="https://github.com/patkub2/fast-typing-game"
         >
           Pierwszy większy projekt z wykorzystaniem narzędzi React Hooks. Gra
@@ -135,12 +135,12 @@ function Projects() {
           tech1="react"
           tech2="gatsby"
           tech3="RWD"
-          livelink="/"
+          livelink="https://patkub2-coffeshop.netlify.app"
           githublink="https://github.com/patkub2/coffe-shop"
         >
           Przykładowa strona kawiarni wykonana z GatsbyJS do stylowania
           wykorzystaniem styled components ubogacone w flex box'a i css grid'a.
-          Strona jest w trakcie budowania.
+          Strona jest wciąż w trakcie budowania.
         </ProjectsTemplate>
         <ProjectsTemplate
           title="Port"

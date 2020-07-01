@@ -7,6 +7,7 @@ import linkedin from "../../img/linkedin.svg";
 import facebook from "../../img/facebook.png";
 
 import { useSelector } from "react-redux";
+import { useForm } from "react-hook-form";
 
 const EmailContainer = styled.div`
   /*border: 1px solid green; /* green*/
@@ -62,6 +63,10 @@ const Message = styled.textarea`
     color: ${({ theme }) => theme.colors.white};
     font-family: ${({ theme }) => theme.family.main};
   }
+  ::value {
+    color: ${({ theme }) => theme.colors.white};
+    font-family: ${({ theme }) => theme.family.main};
+  }
 `;
 
 const Button = styled.button`
@@ -113,10 +118,17 @@ function Email() {
     setText("Facebook");
     toggle();
   }
+  /////////////////////////////////////////////////////////////////////////////////
   const language = useSelector((state) => state);
   if (language) {
     return (
       <EmailContainer>
+        <Mail
+          type="email"
+          value="patrykkubala1999@gmail.com"
+          readonly
+          disabled
+        ></Mail>
         <Mail type="email" placeholder="Your email"></Mail>
         <Message placeholder="How can I help you?"></Message>
         <Button>{show ? <div>{text}</div> : <div>Send</div>}</Button>
@@ -142,6 +154,12 @@ function Email() {
   }
   return (
     <EmailContainer>
+      <Mail
+        type="email"
+        value="patrykkubala1999@gmail.com"
+        readonly
+        disabled
+      ></Mail>
       <Mail type="email" placeholder="Twój email"></Mail>
       <Message placeholder="W czym mogę Ci pomóc?"></Message>
       <Button>{show ? <div>{text}</div> : <div>Wyślij</div>}</Button>

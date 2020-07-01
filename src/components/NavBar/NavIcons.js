@@ -21,7 +21,6 @@ const Icon = styled.img`
   width: 30px;
   height: 30px;
   margin: 0 10px;
-  cursor: pointer;
 `;
 
 const IconFlag = styled.img`
@@ -30,6 +29,17 @@ const IconFlag = styled.img`
   height: 20px;
   margin: 0 10px;
   cursor: pointer;
+`;
+const Al = styled.a`
+  /*border: 1px solid green; /* green*/
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  :hover {
+    padding-top: 5px;
+  }
 `;
 
 const Button = styled.button`
@@ -60,9 +70,19 @@ function NavIcons() {
         onClick={() => dispatch(change())}
         src={language ? flagpl : flagen}
       />
-      <Icon src={linkedin} />
-      <Icon src={github} />
-      <Icon src={mail} />
+      <Al
+        href="https://www.linkedin.com/in/patryk-kubala-a9730b1a2/"
+        target="_blank"
+      >
+        <Icon src={linkedin} href="/" target="_blank" />
+      </Al>
+
+      <Al href="https://github.com/patkub2" target="_blank">
+        <Icon src={github} />
+      </Al>
+      <Al href="mailto:patrykkubala1999@gmail.com" target="_blank">
+        <Icon src={mail} />
+      </Al>
     </NavIconsContainer>
   );
 }
