@@ -18,6 +18,7 @@ const GlobalStyle = createGlobalStyle`
 
 const StyledWrapper = styled.div`
   position: relative;
+  scroll-behavior: smooth;
 `;
 
 const Layout = ({ children }) => (

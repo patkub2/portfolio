@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import useToggler from "../useToggler";
 const ImgCont = styled.div`

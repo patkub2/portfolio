@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import Title from "../Title";
 import Orange from "../Orange";
 import github from "../../img/github.svg";
 
@@ -123,11 +122,11 @@ function ProjectsTemplate(p) {
         <Pic src={p.img ? p.img : null} />
         <Overlay>
           <Text>
-            <a href={p.livelink} target="_blank">
+            <a href={p.livelink} target="_blank" rel="noopener noreferrer">
               LIVE
             </a>
-            <a href={p.githublink} target="_blank">
-              <img src={github}></img>
+            <a href={p.githublink} target="_blank" rel="noopener noreferrer">
+              <img src={github} alt="github" />
             </a>
           </Text>
         </Overlay>

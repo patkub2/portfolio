@@ -42,24 +42,6 @@ const Al = styled.a`
   }
 `;
 
-const Button = styled.button`
-  background-color: transparent;
-  border-radius: 30px;
-  border: 2px solid #ffffff;
-  display: inline-block;
-  cursor: pointer;
-  color: #ffffff;
-  font-family: Arial;
-  font-size: 17px;
-  padding: 10px 20px;
-  text-decoration: none;
-  margin: 0 10px;
-  :active {
-    position: relative;
-    top: 1px;
-  }
-`;
-
 function NavIcons() {
   const language = useSelector((state) => state);
   const dispatch = useDispatch();

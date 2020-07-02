@@ -27,7 +27,7 @@ const ArrowContainer = styled.div`
 function Arrow() {
   return (
     <ArrowContainer>
-      <img src={arrow} />
+      <img src={arrow} alt="arrow" />
     </ArrowContainer>
   );
 }

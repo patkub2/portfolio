@@ -8,7 +8,6 @@ import facebook from "../../img/facebook.png";
 
 import Form from "./Form";
 import { useSelector } from "react-redux";
-import { useForm } from "react-hook-form";
 
 const EmailContainer = styled.div`
   /*border: 1px solid green; /* green*/
@@ -46,21 +45,6 @@ const Mail = styled.input`
     color: ${({ theme }) => theme.colors.white};
     font-family: ${({ theme }) => theme.family.main};
   }
-`;
-
-const Button = styled.button`
-  background-color: ${({ theme }) => theme.colors.darker};
-  color: white;
-  border: 2px solid ${({ theme }) => theme.colors.orange};
-  outline: none;
-  padding: 15px 0px;
-  width: 150px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin-top: 40px;
-  cursor: pointer;
 `;
 
 const IconsContainer = styled.div`

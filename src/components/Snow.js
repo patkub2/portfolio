@@ -50,7 +50,7 @@ const Cont = styled.div`
 const Snowflake = (props) => {
   return (
     <SnowFlake id={`item${props.id}`} style={props.style}>
-      <img src={eclip} width={getRandomInt(10, 30)} />
+      <img src={eclip} width={getRandomInt(10, 30)} alt="snow" />
     </SnowFlake>
   );
 };

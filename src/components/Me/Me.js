@@ -10,14 +10,12 @@ import Border from "../Border";
 import css from "../../img/icons/css.png";
 import html from "../../img/icons/html.png";
 import figma from "../../img/icons/figma.png";
-import gatsby from "../../img/icons/gatsby.png";
 import git from "../../img/icons/git.png";
 import js from "../../img/icons/js.png";
 import ps from "../../img/icons/ps.png";
 import react from "../../img/icons/react.png";
 import sass from "../../img/icons/sass.png";
 import wp from "../../img/icons/wp.png";
-import webpack from "../../img/icons/webpack.png";
 import redux from "../../img/icons/redux.png";
 
 import { useSelector } from "react-redux";
