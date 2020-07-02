@@ -86,12 +86,20 @@ function Form(p) {
 
   return (
     <FormContainer>
-      <form onSubmit={handleSubmit(onSubmit)}>
+      <form
+        onSubmit={handleSubmit(onSubmit)}
+        name="contact"
+        netlify
+        netlify-honeypot="bot-field"
+        hidden
+      >
+        <input type="hidden" name="form-name" value="contact" />
         <Mail
           name="mail"
           type="email"
           ref={register}
           placeholder={p.emailplaceholder}
+          required
         />
         <Message
           placeholder={p.messageplaceholder}
