@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import mail from "../../img/mail.png";
 import { useForm } from "react-hook-form";
@@ -82,7 +82,38 @@ const Submit = styled.input`
 
 function Form(p) {
   const { register, handleSubmit } = useForm();
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (data) => set(data);
+  const [status, setStatus] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const set = (data) => {
+    setEmail(data.mail);
+    setMessage(data.message);
+    handleSubmitt();
+  };
+
+  const encode = (data) => {
+    const formData = new FormData();
+    Object.keys(data).forEach((k) => {
+      formData.append(k, data[k]);
+    });
+    return formData;
+  };
+
+  const handleSubmitt = (e) => {
+    const data = { "form-name": "contact", email, message };
+
+    fetch("/", {
+      method: "POST",
+      // headers: { "Content-Type": 'multipart/form-data; boundary=random' },
+      body: encode(data),
+    })
+      .then(() => setStatus("Form Submission Successful!!"))
+      .catch((error) => setStatus("Form Submission Failed!"));
+
+    e.preventDefault();
+  };
 
   return (
     <FormContainer>
@@ -102,6 +133,7 @@ function Form(p) {
 
         <Submit type="submit" value={p.submitplaceholder} />
       </form>
+      <h3>{status}</h3>
     </FormContainer>
   );
 }
