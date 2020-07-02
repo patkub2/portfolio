@@ -104,7 +104,7 @@ const Icon = styled.img`
   }
 `;
 
-function Form() {
+function Form(p) {
   const [show, toggle] = useToggler(false);
   const [text, setText] = useState("Wyślij");
   const { register, handleSubmit } = useForm();
@@ -117,17 +117,16 @@ function Form() {
           name="mail"
           type="email"
           ref={register}
-          placeholder="Your email"
-          required
+          placeholder={p.emailplaceholder}
         />
         <Message
-          placeholder="How can I help you?"
+          placeholder={p.messageplaceholder}
           name="message"
           ref={register}
           required
         ></Message>
 
-        <Submit type="submit" value="Submit" />
+        <Submit type="submit" value={p.submitplaceholder} />
       </form>
     </FormContainer>
   );

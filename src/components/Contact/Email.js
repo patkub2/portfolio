@@ -6,6 +6,7 @@ import github from "../../img/github.svg";
 import linkedin from "../../img/linkedin.svg";
 import facebook from "../../img/facebook.png";
 
+import Form from "./Form";
 import { useSelector } from "react-redux";
 import { useForm } from "react-hook-form";
 
@@ -47,28 +48,6 @@ const Mail = styled.input`
   }
 `;
 
-const Message = styled.textarea`
-  color: white;
-  width: 90%;
-  padding: 12px 12px;
-  margin: 8px 0;
-  height: 300px;
-  box-sizing: border-box;
-  border: none;
-  border-bottom: 2px solid ${({ theme }) => theme.colors.orange};
-  resize: none;
-  outline: none;
-  background-color: ${({ theme }) => theme.colors.dark};
-  ::placeholder {
-    color: ${({ theme }) => theme.colors.white};
-    font-family: ${({ theme }) => theme.family.main};
-  }
-  ::value {
-    color: ${({ theme }) => theme.colors.white};
-    font-family: ${({ theme }) => theme.family.main};
-  }
-`;
-
 const Button = styled.button`
   background-color: ${({ theme }) => theme.colors.darker};
   color: white;
@@ -105,6 +84,8 @@ const Icon = styled.img`
 function Email() {
   const [show, toggle] = useToggler(false);
   const [text, setText] = useState("Wyślij");
+  const en = show ? text : "Send";
+  const pl = show ? text : "Wyślij";
 
   function handleMouseHoverLinkedIn() {
     setText("LinkedIn");
@@ -129,9 +110,12 @@ function Email() {
           readonly
           disabled
         ></Mail>
-        <Mail type="email" placeholder="Your email"></Mail>
-        <Message placeholder="How can I help you?"></Message>
-        <Button>{show ? <div>{text}</div> : <div>Send</div>}</Button>
+        <Form
+          emailplaceholder="Your email"
+          messageplaceholder="How can I help you?"
+          submitplaceholder={en}
+        />
+
         <IconsContainer>
           <Icon
             src={linkedin}
@@ -160,9 +144,11 @@ function Email() {
         readonly
         disabled
       ></Mail>
-      <Mail type="email" placeholder="Twój email"></Mail>
-      <Message placeholder="W czym mogę Ci pomóc?"></Message>
-      <Button>{show ? <div>{text}</div> : <div>Wyślij</div>}</Button>
+      <Form
+        emailplaceholder="Twój Email"
+        messageplaceholder="Jak mogę Ci pomóc?"
+        submitplaceholder={pl}
+      />
 
       <IconsContainer>
         <Icon

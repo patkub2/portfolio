@@ -4,7 +4,6 @@ import Title from "../Title";
 import Orange from "../Orange";
 import Border from "../Border";
 import Email from "./Email";
-import Form from "./Form";
 
 import { useSelector } from "react-redux";
 
@@ -39,7 +38,7 @@ function Contact() {
         Kon<Orange>takt</Orange>{" "}
       </Title>
       <Border>
-        <Form />
+        <Email />
       </Border>
     </ContactContainer>
   );
