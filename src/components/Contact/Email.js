@@ -6,7 +6,6 @@ import github from "../../img/github.svg";
 import linkedin from "../../img/linkedin.svg";
 import facebook from "../../img/facebook.png";
 
-import Form from "./Form";
 import { useSelector } from "react-redux";
 import Folm from "./Folm";
 
