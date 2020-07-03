@@ -1,49 +1,37 @@
-import React, { useState, useCallback } from "react";
+import React from "react";
 
-function Folm() {
-  const [name, setName] = useState("");
-  const [status, setStatus] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+const encode = (data) => {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+};
 
-  const encode = (data) => {
-    const formData = new FormData();
-    Object.keys(data).forEach((k) => {
-      formData.append(k, data[k]);
-    });
-    return formData;
-  };
+class Folm extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { name: "", email: "", message: "" };
+  }
 
-  const handleSubmit = (e) => {
-    const data = { "form-name": "contact", name, email, message };
-    console.log(data);
+  /* Here’s the juicy bit for posting the form submission */
+
+  handleSubmit = (e) => {
     fetch("/", {
       method: "POST",
-      headers: { "Content-Type": "multipart/form-data; boundary=random" },
-      body: encode(data),
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...this.state }),
     })
-      .then(() => setStatus("Form Submission Successful!!"))
-      .catch((error) => setStatus("Form Submission Failed!"));
+      .then(() => alert("Success!"))
+      .catch((error) => alert(error));
 
     e.preventDefault();
   };
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    if (name === "name") {
-      return setName(value);
-    }
-    if (name === "email") {
-      return setEmail(value);
-    }
-    if (name === "message") {
-      return setMessage(value);
-    }
-  };
+  handleChange = (e) => this.setState({ [e.target.name]: e.target.value });
 
-  return (
-    <div className="App">
-      <form onSubmit={handleSubmit} action="/thank-you/">
+  render() {
+    const { name, email, message } = this.state;
+    return (
+      <form onSubmit={this.handleSubmit}>
         <p>
           <label>
             Your Name:{" "}
@@ -51,7 +39,7 @@ function Folm() {
               type="text"
               name="name"
               value={name}
-              onChange={handleChange}
+              onChange={this.handleChange}
             />
           </label>
         </p>
@@ -62,24 +50,25 @@ function Folm() {
               type="email"
               name="email"
               value={email}
-              onChange={handleChange}
+              onChange={this.handleChange}
             />
           </label>
         </p>
         <p>
           <label>
             Message:{" "}
-            <textarea name="message" value={message} onChange={handleChange} />
+            <textarea
+              name="message"
+              value={message}
+              onChange={this.handleChange}
+            />
           </label>
         </p>
-
         <p>
           <button type="submit">Send</button>
         </p>
       </form>
-      <h3>{status}</h3>
-    </div>
-  );
+    );
+  }
 }
-
 export default Folm;
