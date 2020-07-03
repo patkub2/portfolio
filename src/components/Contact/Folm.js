@@ -1,11 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import mail from "../../img/mail.png";
-import { useForm } from "react-hook-form";
 
 const FormContainer = styled.div`
   form {
-    /*border: 1px solid green; /* green*/
+    /* border: 1px solid green; /* green*/
     margin: 0px;
     min-height: 450px;
     width: 600px;
@@ -65,7 +64,7 @@ const Message = styled.textarea`
   }
 `;
 
-const Submit = styled.input`
+const Submit = styled.button`
   background-color: ${({ theme }) => theme.colors.darker};
   color: white;
   border: 2px solid ${({ theme }) => theme.colors.orange};
@@ -80,64 +79,58 @@ const Submit = styled.input`
   cursor: pointer;
 `;
 
-function Form(p) {
-  const { register, handleSubmit } = useForm();
-  const onSubmit = (data) => set(data);
-  const [status, setStatus] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+const encode = (data) => {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+};
 
-  const set = (data) => {
-    setEmail(data.mail);
-    setMessage(data.message);
-    handleSubmitt();
-  };
+class Folm extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { email: "", message: "" };
+  }
 
-  const encode = (data) => {
-    const formData = new FormData();
-    Object.keys(data).forEach((k) => {
-      formData.append(k, data[k]);
-    });
-    return formData;
-  };
+  /* Here’s the juicy bit for posting the form submission */
 
-  const handleSubmitt = (e) => {
-    const data = { "form-name": "contact", email, message };
-
+  handleSubmit = (e) => {
     fetch("/", {
       method: "POST",
-      // headers: { "Content-Type": 'multipart/form-data; boundary=random' },
-      body: encode(data),
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...this.state }),
     })
-      .then(() => setStatus("Form Submission Successful!!"))
-      .catch((error) => setStatus("Form Submission Failed!"));
+      .then(() => alert("Success!"))
+      .catch((error) => alert(error));
 
     e.preventDefault();
   };
 
-  return (
-    <FormContainer>
-      <form onSubmit={handleSubmit(onSubmit)} name="contact" method="post">
-        <input type="hidden" name="form-name" value="contact" />
-        <Mail
-          name="email"
-          type="email"
-          ref={register}
-          placeholder={p.emailplaceholder}
-          required
-        />
-        <Message
-          placeholder={p.messageplaceholder}
-          name="message"
-          ref={register}
-          required
-        ></Message>
+  handleChange = (e) => this.setState({ [e.target.name]: e.target.value });
 
-        <Submit type="submit" value={p.submitplaceholder} />
-      </form>
-      <h3>{status}</h3>
-    </FormContainer>
-  );
+  render() {
+    const { email, message } = this.state;
+    return (
+      <FormContainer>
+        <form onSubmit={this.handleSubmit}>
+          <Mail
+            type="email"
+            name="email"
+            value={email}
+            onChange={this.handleChange}
+            placeholder={this.props.emailplaceholder}
+          />
+
+          <Message
+            placeholder={this.props.messageplaceholder}
+            name="message"
+            value={message}
+            onChange={this.handleChange}
+          />
+
+          <Submit type="submit">{this.props.submitplaceholder}</Submit>
+        </form>
+      </FormContainer>
+    );
+  }
 }
-
-export default Form;
+export default Folm;

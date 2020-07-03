@@ -8,6 +8,7 @@ import facebook from "../../img/facebook.png";
 
 import Form from "./Form";
 import { useSelector } from "react-redux";
+import Folm from "./Folm";
 
 const EmailContainer = styled.div`
   /*border: 1px solid green; /* green*/
@@ -94,7 +95,7 @@ function Email() {
           readonly
           disabled
         ></Mail>
-        <Form
+        <Folm
           emailplaceholder="Your email"
           messageplaceholder="How can I help you?"
           submitplaceholder={en}
@@ -128,7 +129,7 @@ function Email() {
         readonly
         disabled
       ></Mail>
-      <Form
+      <Folm
         emailplaceholder="Twój Email"
         messageplaceholder="Jak mogę Ci pomóc?"
         submitplaceholder={pl}
