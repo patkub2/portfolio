@@ -7,7 +7,6 @@ import booktifly from "../../img/booktifly.JPG";
 import cofferepublic from "../../img/cofferepublic.JPG";
 import fasttyping from "../../img/fasttyping.JPG";
 import portfolio from "../../img/portfolio.JPG";
-import Border from "../Border";
 
 import { useSelector } from "react-redux";
 
@@ -21,6 +20,18 @@ const ProjectsContainer = styled.div`
   justify-content: space-around;
   flex-flow: wrap;
   background-color: ${({ theme }) => theme.colors.dark};
+`;
+
+const Border = styled.div`
+  /*border: 1px solid yellow; /* RED*/
+  width: 1800px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-flow: wrap;
+  @media only screen and (max-width: 1650px) {
+    width: 1220px;
+  }
 `;
 
 function Projects() {

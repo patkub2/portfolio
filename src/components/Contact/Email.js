@@ -135,21 +135,39 @@ function Email() {
       />
 
       <IconsContainer>
-        <Icon
-          src={linkedin}
-          onMouseEnter={handleMouseHoverLinkedIn}
-          onMouseLeave={handleMouseHoverLinkedIn}
-        />
-        <Icon
-          src={github}
-          onMouseEnter={handleMouseHoverGithub}
-          onMouseLeave={handleMouseHoverGithub}
-        />
-        <Icon
-          src={facebook}
-          onMouseEnter={handleMouseHoverFacebook}
-          onMouseLeave={handleMouseHoverFacebook}
-        />
+        <a
+          href="https://www.linkedin.com/in/patryk-kubala-a9730b1a2/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Icon
+            src={linkedin}
+            onMouseEnter={handleMouseHoverLinkedIn}
+            onMouseLeave={handleMouseHoverLinkedIn}
+          />
+        </a>
+        <a
+          href="https://github.com/patkub2"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Icon
+            src={github}
+            onMouseEnter={handleMouseHoverGithub}
+            onMouseLeave={handleMouseHoverGithub}
+          />
+        </a>
+        <a
+          href="https://www.facebook.com/people/Patryk-Kubala/100010128281851"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Icon
+            src={facebook}
+            onMouseEnter={handleMouseHoverFacebook}
+            onMouseLeave={handleMouseHoverFacebook}
+          />
+        </a>
       </IconsContainer>
     </EmailContainer>
   );

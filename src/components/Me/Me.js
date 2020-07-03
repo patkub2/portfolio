@@ -56,8 +56,7 @@ function Me() {
               {" "}
               I also do computer graphics as a hobby. Mainly painting and
               so-called photobashing. But also designing websites, business
-              cards, posters and logos. Some of the project you can find{" "}
-              <Orange> here</Orange>.{" "}
+              cards, posters and logos.{" "}
             </p>
             <p>
               {" "}
@@ -67,7 +66,12 @@ function Me() {
             <p>
               {" "}
               I included the rest of the details in my CV and on my{" "}
-              <Orange>Linkedin </Orange>
+              <Orange
+                href="https://www.linkedin.com/in/patryk-kubala-a9730b1a2/"
+                target="_blank"
+              >
+                Linkedin{" "}
+              </Orange>
               profile.
             </p>
           </About>
@@ -108,8 +112,7 @@ function Me() {
             {" "}
             Na co dzień zajmuję się także grafiką. Głównie malowaniem i tzw.
             photobashingiem. Ale także projektowaniem przeróżnych stron,
-            wizytówek , plakatów i logo. Część projektów można znaleźć{" "}
-            <Orange>tutaj</Orange>.{" "}
+            wizytówek , plakatów i logo.{" "}
           </p>
           <p>
             {" "}
@@ -118,7 +121,13 @@ function Me() {
           </p>
           <p>
             Resztę informacji zamieściłem w CV oraz na moim profilu{" "}
-            <Orange>Linkedin</Orange>.
+            <Orange
+              href="https://www.linkedin.com/in/patryk-kubala-a9730b1a2/"
+              target="_blank"
+            >
+              Linkedin
+            </Orange>
+            .
           </p>
         </About>
         <Tech>
