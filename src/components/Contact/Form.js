@@ -102,28 +102,18 @@ function Form(p) {
   };
 
   const handleSubmitt = (e) => {
+    const data = { "form-name": "contact", email, message };
+
     fetch("/", {
       method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", email, message }),
+      // headers: { "Content-Type": 'multipart/form-data; boundary=random' },
+      body: encode(data),
     })
-      .then(() => alert("Success!"))
-      .catch((error) => alert(error));
-  };
+      .then(() => setStatus("Form Submission Successful!!"))
+      .catch((error) => setStatus("Form Submission Failed!"));
 
-  //  const handleSubmitt = (e) => {
-  //    const data = { "form-name": "contact", email, message };
-  //
-  //    fetch("/", {
-  //      method: "POST",
-  //      // headers: { "Content-Type": 'multipart/form-data; boundary=random' },
-  //      body: encode(data),
-  //    })
-  //      .then(() => setStatus("Form Submission Successful!!"))
-  //      .catch((error) => setStatus("Form Submission Failed!"));
-  //
-  //    e.preventDefault();
-  //  };
+    e.preventDefault();
+  };
 
   return (
     <FormContainer>
