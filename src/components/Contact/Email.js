@@ -8,6 +8,7 @@ import facebook from "../../img/facebook.png";
 
 import Form from "./Form";
 import { useSelector } from "react-redux";
+import Folm from "./Folm";
 
 const EmailContainer = styled.div`
   /*border: 1px solid green; /* green*/
@@ -85,41 +86,6 @@ function Email() {
   }
   /////////////////////////////////////////////////////////////////////////////////
   const language = useSelector((state) => state);
-  if (language) {
-    return (
-      <EmailContainer>
-        <Mail
-          type="email"
-          value="patrykkubala1999@gmail.com"
-          readonly
-          disabled
-        ></Mail>
-        <Form
-          emailplaceholder="Your email"
-          messageplaceholder="How can I help you?"
-          submitplaceholder={en}
-        />
-
-        <IconsContainer>
-          <Icon
-            src={linkedin}
-            onMouseEnter={handleMouseHoverLinkedIn}
-            onMouseLeave={handleMouseHoverLinkedIn}
-          />
-          <Icon
-            src={github}
-            onMouseEnter={handleMouseHoverGithub}
-            onMouseLeave={handleMouseHoverGithub}
-          />
-          <Icon
-            src={facebook}
-            onMouseEnter={handleMouseHoverFacebook}
-            onMouseLeave={handleMouseHoverFacebook}
-          />
-        </IconsContainer>
-      </EmailContainer>
-    );
-  }
   return (
     <EmailContainer>
       <Mail
@@ -128,11 +94,7 @@ function Email() {
         readonly
         disabled
       ></Mail>
-      <Form
-        emailplaceholder="Twój Email"
-        messageplaceholder="Jak mogę Ci pomóc?"
-        submitplaceholder={pl}
-      />
+      <Folm />
 
       <IconsContainer>
         <Icon
