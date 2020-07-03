@@ -94,7 +94,7 @@ function Email() {
         readonly
         disabled
       ></Mail>
-      <Folm />
+      <Form />
 
       <IconsContainer>
         <Icon
