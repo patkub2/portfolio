@@ -86,6 +86,41 @@ function Email() {
   }
   /////////////////////////////////////////////////////////////////////////////////
   const language = useSelector((state) => state);
+  if (language) {
+    return (
+      <EmailContainer>
+        <Mail
+          type="email"
+          value="patrykkubala1999@gmail.com"
+          readonly
+          disabled
+        ></Mail>
+        <Folm
+          emailplaceholder="Your email"
+          messageplaceholder="How can I help you?"
+          submitplaceholder={en}
+        />
+
+        <IconsContainer>
+          <Icon
+            src={linkedin}
+            onMouseEnter={handleMouseHoverLinkedIn}
+            onMouseLeave={handleMouseHoverLinkedIn}
+          />
+          <Icon
+            src={github}
+            onMouseEnter={handleMouseHoverGithub}
+            onMouseLeave={handleMouseHoverGithub}
+          />
+          <Icon
+            src={facebook}
+            onMouseEnter={handleMouseHoverFacebook}
+            onMouseLeave={handleMouseHoverFacebook}
+          />
+        </IconsContainer>
+      </EmailContainer>
+    );
+  }
   return (
     <EmailContainer>
       <Mail
@@ -94,7 +129,11 @@ function Email() {
         readonly
         disabled
       ></Mail>
-      <Folm />
+      <Folm
+        emailplaceholder="Twój Email"
+        messageplaceholder="Jak mogę Ci pomóc?"
+        submitplaceholder={pl}
+      />
 
       <IconsContainer>
         <Icon

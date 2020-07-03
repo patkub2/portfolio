@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import mail from "../../img/mail.png";
 
 const FormContainer = styled.div`
   form {
-    /*border: 1px solid green; /* green*/
+    /* border: 1px solid green; /* green*/
     margin: 0px;
     min-height: 450px;
     width: 600px;
@@ -117,15 +117,17 @@ class Folm extends React.Component {
             name="email"
             value={email}
             onChange={this.handleChange}
+            placeholder={this.props.emailplaceholder}
           />
 
           <Message
+            placeholder={this.props.messageplaceholder}
             name="message"
             value={message}
             onChange={this.handleChange}
           />
 
-          <Submit type="submit">Send</Submit>
+          <Submit type="submit">{this.props.submitplaceholder}</Submit>
         </form>
       </FormContainer>
     );
