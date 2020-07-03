@@ -110,24 +110,30 @@ class Folm extends React.Component {
   render() {
     const { email, message } = this.state;
     return (
-      <FormContainer>
-        <form onSubmit={this.handleSubmit}>
-          <Mail
-            type="email"
-            name="email"
-            value={email}
-            onChange={this.handleChange}
-          />
-
-          <Message
-            name="message"
-            value={message}
-            onChange={this.handleChange}
-          />
-
+      <form onSubmit={this.handleSubmit}>
+        <p>
+          <label>
+            <Mail
+              type="email"
+              name="email"
+              value={email}
+              onChange={this.handleChange}
+            />
+          </label>
+        </p>
+        <p>
+          <label>
+            <Message
+              name="message"
+              value={message}
+              onChange={this.handleChange}
+            />
+          </label>
+        </p>
+        <p>
           <Submit type="submit">Send</Submit>
-        </form>
-      </FormContainer>
+        </p>
+      </form>
     );
   }
 }
