@@ -43,11 +43,11 @@ function Me() {
           <About>
             <p>
               <Orange>
-                Hi, I'm Patryk and I'm a Front-end Developer from Katowice.
+                Hi, I'm Patryk and I'm a Front-end Developer from Racibórz.
               </Orange>{" "}
               I graduated from IT school in Racibórz, where I gained the
               necessary basic knowledge about computers, networks and
-              programming. A year ago I decided to delve into the worl of
+              programming. A year ago I decided to delve into the world of
               front-end development and to this day I am still absorbed by it,
               mainly thanks to the
               <Orange> React</Orange> library.
@@ -56,7 +56,7 @@ function Me() {
               {" "}
               I also do computer graphics as a hobby. Mainly painting and
               so-called photobashing. But also designing websites, business
-              cards, posters and logos.{" "}
+              cards and logos.{" "}
             </p>
             <p>
               {" "}
@@ -65,7 +65,8 @@ function Me() {
             </p>
             <p>
               {" "}
-              I included the rest of the details in my CV and on my{" "}
+              I included the rest of the details in my <Orange>CV</Orange> and
+              on my{" "}
               <Orange
                 href="https://www.linkedin.com/in/patryk-kubala-a9730b1a2/"
                 target="_blank"
@@ -100,27 +101,29 @@ function Me() {
         <About>
           <p>
             <Orange>
-              Cześć mam na imię Patryk i jestem Front-end Developerem z Katowic.
+              Cześć mam na imię Patryk i jestem Front-end Developerem z
+              Raciborza.
             </Orange>{" "}
             Ukończyłem technikum na kierunku Informatycznym w Raciborzu gdzie
             zdobyłem niezbędną podstawową wiedzę odnośnie komputerów, sieci i
-            programowania. Roku temu postanowiłem zagłębić się front-end
+            programowania. Roku temu postanowiłem zagłębić się w front-end
             developerkę i to w niej do dzisiaj się rozwijam korzystając głownie
             z biblioteki <Orange>React’a</Orange>.
           </p>
           <p>
             {" "}
-            Na co dzień zajmuję się także grafiką. Głównie malowaniem i tzw.
-            photobashingiem. Ale także projektowaniem przeróżnych stron,
-            wizytówek , plakatów i logo.{" "}
+            Na co dzień zajmuję się także grafiką komputerową. Głównie
+            malowaniem i tzw. photobashingiem ale także projektowaniem
+            przeróżnych stron, wizytówek i logo.{" "}
           </p>
           <p>
             {" "}
             Swobodnie posługuję się językiem <Orange>angielskim</Orange> (w
-            mowie i w piśmie) oraz niemieckim w stopni średnio-zaawansowanym.
+            mowie i w piśmie) oraz niemieckim w stopniu średnim.
           </p>
           <p>
-            Resztę informacji zamieściłem w CV oraz na moim profilu{" "}
+            Resztę informacji zamieściłem w <Orange>CV</Orange> oraz na moim
+            profilu{" "}
             <Orange
               href="https://www.linkedin.com/in/patryk-kubala-a9730b1a2/"
               target="_blank"
