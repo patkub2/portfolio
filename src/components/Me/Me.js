@@ -48,7 +48,7 @@ function Me() {
               I graduated from IT school in Racibórz, where I gained the
               necessary basic knowledge about computers, networks and
               programming. A year ago I decided to delve into the world of
-              front-end development and to this day I am still absorbed by it,
+              front-end development and to this day I am still fascinated by it,
               mainly thanks to the
               <Orange> React</Orange> library.
             </p>
@@ -60,8 +60,8 @@ function Me() {
             </p>
             <p>
               {" "}
-              I speak <Orange>English</Orange> fluently (spoken and written) and
-              German at intermediate levels.
+              I know spoken and written <Orange>English</Orange> at a great
+              level and German at an intermediate level.
             </p>
             <p>
               {" "}

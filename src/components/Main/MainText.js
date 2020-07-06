@@ -54,7 +54,7 @@ function MainText() {
           More information <Orange>about me</Orange>
         </Info>
         <Info>
-          and <Orange>projects</Orange> you can find below
+          and my <Orange>projects</Orange> can be found below
         </Info>
       </MainTextContainer>
     );
