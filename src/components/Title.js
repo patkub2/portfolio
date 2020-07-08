@@ -14,6 +14,9 @@ const TitleText = styled.p`
   font-size: 48px;
   text-align: center;
   color: ${({ theme }) => theme.colors.white};
+  @media only screen and (max-width: 550px) {
+    font-size: 34px;
+  }
 `;
 
 function Title({ children }) {

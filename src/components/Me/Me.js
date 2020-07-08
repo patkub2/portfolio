@@ -17,12 +17,24 @@ import react from "../../img/icons/react.png";
 import sass from "../../img/icons/sass.png";
 import wp from "../../img/icons/wp.png";
 import redux from "../../img/icons/redux.png";
+import cv from "../../pdf/CV1.pdf";
 
 import { useSelector } from "react-redux";
+import Button from "./Button";
 
 const MeContainer = styled.div`
   /*border: 1px solid yellow; /* RED*/
   min-height: 60vh;
+  display: flex;
+  font-size: 18px;
+  align-items: center;
+  justify-content: space-around;
+  flex-flow: wrap;
+  background-color: ${({ theme }) => theme.colors.darker};
+`;
+
+const ButtonContainer = styled.div`
+  /*border: 1px solid yellow; /* RED*/
   display: flex;
   font-size: 18px;
   align-items: center;
@@ -75,6 +87,17 @@ function Me() {
               </Orange>
               profile.
             </p>
+            <ButtonContainer>
+              <Button href={cv} target="_blank">
+                CV
+              </Button>
+              <Button
+                href="https://www.linkedin.com/in/patkub2/"
+                target="_blank"
+              >
+                Linkedin
+              </Button>
+            </ButtonContainer>
           </About>
           <Tech>
             <Image src={css} name="Css" />
@@ -132,6 +155,14 @@ function Me() {
             </Orange>
             .
           </p>
+          <ButtonContainer>
+            <Button href={cv} target="_blank">
+              CV
+            </Button>
+            <Button href="https://www.linkedin.com/in/patkub2/" target="_blank">
+              Linkedin
+            </Button>
+          </ButtonContainer>
         </About>
         <Tech>
           <Image src={css} name="Css" />

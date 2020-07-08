@@ -136,7 +136,7 @@ function Email() {
 
       <IconsContainer>
         <a
-          href="https://www.linkedin.com/in/patryk-kubala-a9730b1a2/"
+          href="https://www.linkedin.com/in/patkub2"
           target="_blank"
           rel="noopener noreferrer"
         >

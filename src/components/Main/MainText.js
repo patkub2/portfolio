@@ -26,6 +26,9 @@ const Title = styled.p`
   font-size: 52px;
   text-align: center;
   color: ${({ theme }) => theme.colors.white};
+  @media only screen and (max-width: 550px) {
+    font-size: 30px;
+  }
 `;
 const Bottom = styled.p`
   font-size: 30px;
@@ -33,6 +36,9 @@ const Bottom = styled.p`
 
   text-align: center;
   color: ${({ theme }) => theme.colors.orange};
+  @media only screen and (max-width: 550px) {
+    font-size: 20px;
+  }
 `;
 const Info = styled.p`
   font-size: 20px;
@@ -40,6 +46,9 @@ const Info = styled.p`
 
   text-align: center;
   color: ${({ theme }) => theme.colors.white};
+  @media only screen and (max-width: 550px) {
+    font-size: 15px;
+  }
 `;
 
 function MainText() {

@@ -67,6 +67,9 @@ const Overlay = styled.div`
   background-color: ${({ theme }) => theme.colors.dark};
 
   border-radius: 20px;
+  @media only screen and (max-width: 400px) {
+    opacity: 0.8;
+  }
 `;
 
 const PictureBorder = styled.div`
@@ -99,18 +102,25 @@ const Text = styled.div`
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+`;
+
+const DivDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
+  height: 120px;
   a {
     color: inherit;
     text-decoration: inherit;
     :hover {
-      font-size: 22px;
+      font-size: 26px;
     }
   }
   img {
-    margin: 10px 120px;
-    height: 50px;
+    width: 50px;
     :hover {
-      height: 45px;
+      height: 55px;
     }
   }
 `;
@@ -122,12 +132,15 @@ function ProjectsTemplate(p) {
         <Pic src={p.img ? p.img : null} />
         <Overlay>
           <Text>
-            <a href={p.livelink} target="_blank" rel="noopener noreferrer">
-              LIVE
-            </a>
-            <a href={p.githublink} target="_blank" rel="noopener noreferrer">
-              <img src={github} alt="github" />
-            </a>
+            <DivDiv>
+              <a href={p.livelink} target="_blank" rel="noopener noreferrer">
+                LIVE
+              </a>
+
+              <a href={p.githublink} target="_blank" rel="noopener noreferrer">
+                <img src={github} alt="github" />
+              </a>
+            </DivDiv>
           </Text>
         </Overlay>
       </PictureBorder>

@@ -52,10 +52,7 @@ function NavIcons() {
         onClick={() => dispatch(change())}
         src={language ? flagpl : flagen}
       />
-      <Al
-        href="https://www.linkedin.com/in/patryk-kubala-a9730b1a2/"
-        target="_blank"
-      >
+      <Al href="https://www.linkedin.com/in/patkub2" target="_blank">
         <Icon src={linkedin} href="/" target="_blank" />
       </Al>
 

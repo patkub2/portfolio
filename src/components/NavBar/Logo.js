@@ -11,6 +11,9 @@ const LogoWraper = styled.nav`
 
   img {
     margin-right: 20px;
+    @media only screen and (max-width: 310px) {
+      display: none;
+    }
   }
 `;
 
