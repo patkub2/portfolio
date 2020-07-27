@@ -7,6 +7,7 @@ import booktifly from "../../img/booktifly.JPG";
 import cofferepublic from "../../img/cofferepublic.JPG";
 import fasttyping from "../../img/fasttyping.JPG";
 import portfolio from "../../img/portfolio.JPG";
+import lifecostapp from "../../img/life cost app.JPG";
 
 import { useSelector } from "react-redux";
 
@@ -24,13 +25,13 @@ const ProjectsContainer = styled.div`
 
 const Border = styled.div`
   /*border: 1px solid yellow; /* RED*/
-  width: 1800px;
+  width: 2400px;
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-flow: wrap;
-  @media only screen and (max-width: 1650px) {
-    width: 1220px;
+  @media only screen and (max-width: 2300px) {
+    width: 1500px;
   }
 `;
 
@@ -100,6 +101,22 @@ function Projects() {
             language of the page without having to refresh it. Down styling I
             used styled-components.
           </ProjectsTemplate>
+          <ProjectsTemplate
+            title="Life cost"
+            titleorange="App"
+            img={lifecostapp}
+            tech1="react"
+            tech2="local storage"
+            tech3="sass"
+            tech4="context"
+            livelink="https://patkub2-life-cost-app.netlify.app"
+            githublink="https://github.com/patkub2/life-cost-app"
+          >
+            A small ReactJS-based web application and local storage that
+            includes some basic functions such as editing and deleting. The
+            purpose of the app is to help people record and analyze the cost of
+            their lives.
+          </ProjectsTemplate>
         </Border>
       </ProjectsContainer>
     );
@@ -166,6 +183,22 @@ function Projects() {
           Strona portfolio wykonana w reactcie. Redux został wykorzystany do
           zmiany języka strony bez potrzeby odświeżania jej. Do stylowania
           użyłem styled-components.
+        </ProjectsTemplate>
+        <ProjectsTemplate
+          title="Life cost"
+          titleorange="App"
+          img={lifecostapp}
+          tech1="react"
+          tech2="local storage"
+          tech3="sass"
+          tech4="context"
+          livelink="https://patkub2-life-cost-app.netlify.app"
+          githublink="https://github.com/patkub2/life-cost-app"
+        >
+          Mała aplikacja internetowa oparta na ReactJS i lokalnej pamięci
+          masowej, która obejmuje kilka podstawowych funkcji, takich jak edycja
+          i usuwanie wpisów. Celem aplikacji jest pomoc ludziom w rejestrowaniu
+          i analizowaniu kosztów ich życia.
         </ProjectsTemplate>
       </Border>
     </ProjectsContainer>

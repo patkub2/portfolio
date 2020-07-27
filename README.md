@@ -2,7 +2,7 @@
 
 ## Installation
 
-Use the package manager `npm` to install the Eventify app.
+Use the package manager `npm` to install the app.
 
 ### npm install
 
