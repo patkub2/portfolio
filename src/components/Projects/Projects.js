@@ -4,7 +4,7 @@ import Title from "../Title";
 import Orange from "../Orange";
 import ProjectsTemplate from "./ProjectsTemplate";
 import booktifly from "../../img/booktifly.JPG";
-import cofferepublic from "../../img/cofferepublic.JPG";
+import coffeehome from "../../img/coffee-home.JPG";
 import fasttyping from "../../img/fasttyping.JPG";
 import portfolio from "../../img/portfolio.JPG";
 import lifecostapp from "../../img/life cost app.JPG";
@@ -45,6 +45,55 @@ function Projects() {
         </Title>
         <Border>
           <ProjectsTemplate
+            title="Coffee"
+            titleorange="Home"
+            img={coffeehome}
+            tech1="react"
+            tech2="MongoDB"
+            tech3="NodeJS"
+            tech4="TypeScript"
+            githublink="https://github.com/patkub2/coffee-home"
+          >
+            The latest project I'm still working on. Online store which will
+            allow the customer to log in and add products to cart. Also a option
+            to add new products from the administrator level.
+            <p>
+              <Orange>Live-Update:</Orange> Connecting the backend with the
+              frontend
+            </p>
+          </ProjectsTemplate>
+          <ProjectsTemplate
+            title="Life cost"
+            titleorange="App"
+            img={lifecostapp}
+            tech1="react"
+            tech2="local storage"
+            tech3="sass"
+            tech4="context"
+            livelink="https://patkub2-life-cost-app.netlify.app"
+            githublink="https://github.com/patkub2/life-cost-app"
+          >
+            A small ReactJS-based web application and local storage that
+            includes some basic functions such as editing and deleting. The
+            purpose of the app is to help people record and analyze the cost of
+            their lives.
+          </ProjectsTemplate>
+          <ProjectsTemplate
+            title="Port"
+            titleorange="folio"
+            img={portfolio}
+            tech1="react"
+            tech2="redux"
+            tech3="RWD"
+            livelink="/"
+            githublink="https://github.com/patkub2/portfolio"
+          >
+            Portfolio page made in react. Redux has been used to change the
+            language of the page without having to refresh it. Down styling I
+            used styled-components.
+          </ProjectsTemplate>
+
+          <ProjectsTemplate
             title="Book"
             titleorange="tifly"
             img={booktifly}
@@ -73,50 +122,6 @@ function Projects() {
             designed to measure your writing time and show some motivating
             random quotes.
           </ProjectsTemplate>
-          <ProjectsTemplate
-            title="Coffe"
-            titleorange="Republic"
-            img={cofferepublic}
-            tech1="react"
-            tech2="gatsby"
-            tech3="RWD"
-            livelink="https://patkub2-coffeshop.netlify.app"
-            githublink="https://github.com/patkub2/coffe-shop"
-          >
-            An example of a cafe site made of GatsbyJS for styling I used
-            styled-components with flex box and css grid'a. The site is still
-            under construction.
-          </ProjectsTemplate>
-          <ProjectsTemplate
-            title="Port"
-            titleorange="folio"
-            img={portfolio}
-            tech1="react"
-            tech2="redux"
-            tech3="RWD"
-            livelink="/"
-            githublink="https://github.com/patkub2/portfolio"
-          >
-            Portfolio page made in react. Redux has been used to change the
-            language of the page without having to refresh it. Down styling I
-            used styled-components.
-          </ProjectsTemplate>
-          <ProjectsTemplate
-            title="Life cost"
-            titleorange="App"
-            img={lifecostapp}
-            tech1="react"
-            tech2="local storage"
-            tech3="sass"
-            tech4="context"
-            livelink="https://patkub2-life-cost-app.netlify.app"
-            githublink="https://github.com/patkub2/life-cost-app"
-          >
-            A small ReactJS-based web application and local storage that
-            includes some basic functions such as editing and deleting. The
-            purpose of the app is to help people record and analyze the cost of
-            their lives.
-          </ProjectsTemplate>
         </Border>
       </ProjectsContainer>
     );
@@ -127,6 +132,54 @@ function Projects() {
         Moje <Orange>Projekty</Orange>{" "}
       </Title>
       <Border>
+        <ProjectsTemplate
+          title="Coffee"
+          titleorange="Home"
+          img={coffeehome}
+          tech1="react"
+          tech2="MongoDB"
+          tech3="NodeJS"
+          tech4="TypeScript"
+          githublink="https://github.com/patkub2/coffee-home"
+        >
+          Najnowszy projekt nad którym wciąż pracuję. Sklep internetowy który
+          będzie pozwalał klientowi na zalogowanie się, dodawanie produktów do
+          koszyka oraz dodawanie nowych produktów z poziomu administratora.
+          <p>
+            <Orange>Live-Update:</Orange> Łączenie backendu z frontendem
+          </p>
+        </ProjectsTemplate>
+        <ProjectsTemplate
+          title="Life cost"
+          titleorange="App"
+          img={lifecostapp}
+          tech1="react"
+          tech2="local storage"
+          tech3="sass"
+          tech4="context"
+          livelink="https://patkub2-life-cost-app.netlify.app"
+          githublink="https://github.com/patkub2/life-cost-app"
+        >
+          Mala aplikacja internetowa oparta na ReactJS i lokalnej pamieci
+          masowej, która obejmuje kilka podstawowych funkcji, takich jak edycja
+          i usuwanie wpisów. Celem aplikacji jest pomoc ludziom w rejestrowaniu
+          i analizowaniu kosztów ich zycia.
+        </ProjectsTemplate>
+        <ProjectsTemplate
+          title="Port"
+          titleorange="folio"
+          img={portfolio}
+          tech1="react"
+          tech2="redux"
+          tech3="RWD"
+          livelink="/"
+          githublink="https://github.com/patkub2/portfolio"
+        >
+          Strona portfolio wykonana w reactcie. Redux został wykorzystany do
+          zmiany języka strony bez potrzeby odświeżania jej. Do stylowania
+          użyłem styled-components.
+        </ProjectsTemplate>
+
         <ProjectsTemplate
           title="Book"
           titleorange="tifly"
@@ -155,50 +208,6 @@ function Projects() {
           Pierwszy większy projekt z wykorzystaniem narzędzi React Hooks. Gra
           która ma za zadanie zmierzenie twojego czasu pisania oraz pokazanie
           paru motywujących losowych cytatów.
-        </ProjectsTemplate>
-        <ProjectsTemplate
-          title="Coffe"
-          titleorange="Republic"
-          img={cofferepublic}
-          tech1="react"
-          tech2="gatsby"
-          tech3="RWD"
-          livelink="https://patkub2-coffeshop.netlify.app"
-          githublink="https://github.com/patkub2/coffe-shop"
-        >
-          Przykładowa strona kawiarni wykonana z GatsbyJS do stylowania
-          wykorzystaniem styled components ubogacone w flex box'a i css grid'a.
-          Strona jest wciąż w trakcie budowania.
-        </ProjectsTemplate>
-        <ProjectsTemplate
-          title="Port"
-          titleorange="folio"
-          img={portfolio}
-          tech1="react"
-          tech2="redux"
-          tech3="RWD"
-          livelink="/"
-          githublink="https://github.com/patkub2/portfolio"
-        >
-          Strona portfolio wykonana w reactcie. Redux został wykorzystany do
-          zmiany języka strony bez potrzeby odświeżania jej. Do stylowania
-          użyłem styled-components.
-        </ProjectsTemplate>
-        <ProjectsTemplate
-          title="Life cost"
-          titleorange="App"
-          img={lifecostapp}
-          tech1="react"
-          tech2="local storage"
-          tech3="sass"
-          tech4="context"
-          livelink="https://patkub2-life-cost-app.netlify.app"
-          githublink="https://github.com/patkub2/life-cost-app"
-        >
-          Mala aplikacja internetowa oparta na ReactJS i lokalnej pamieci
-          masowej, która obejmuje kilka podstawowych funkcji, takich jak edycja
-          i usuwanie wpisów. Celem aplikacji jest pomoc ludziom w rejestrowaniu
-          i analizowaniu kosztów ich zycia.
         </ProjectsTemplate>
       </Border>
     </ProjectsContainer>

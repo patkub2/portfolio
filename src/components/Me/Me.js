@@ -17,6 +17,11 @@ import react from "../../img/icons/react.png";
 import sass from "../../img/icons/sass.png";
 import wp from "../../img/icons/wp.png";
 import redux from "../../img/icons/redux.png";
+import node from "../../img/icons/node.png";
+import mongodb from "../../img/icons/mongodb.png";
+import ts from "../../img/icons/ts.png";
+import npm from "../../img/icons/npm.png";
+
 import cv from "../../pdf/CV1.pdf";
 
 import { useSelector } from "react-redux";
@@ -27,7 +32,7 @@ const MeContainer = styled.div`
   min-height: 60vh;
   display: flex;
   font-size: 18px;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-around;
   flex-flow: wrap;
   background-color: ${({ theme }) => theme.colors.darker};
@@ -42,6 +47,19 @@ const ButtonContainer = styled.div`
   flex-flow: wrap;
   background-color: ${({ theme }) => theme.colors.darker};
 `;
+
+// const TechnoTitle = styled.div`
+//   /*border: 1px solid yellow; /* RED*/
+
+//   width: 100%;
+//   display: flex;
+//   font-size: 20px;
+//   align-items: center;
+//   justify-content: center;
+//   background-color: ${({ theme }) => theme.colors.darker};
+//   p {
+//   }
+// `;
 
 function Me() {
   const language = useSelector((state) => state);
@@ -110,6 +128,10 @@ function Me() {
             <Image src={figma} name="Figma" />
             <Image src={wp} name="Wordpress" />
             <Image src={redux} name="Redux" />
+            <Image src={mongodb} name="Mongodb" />
+            <Image src={node} name="Node" />
+            <Image src={ts} name="TypeScript" />
+            <Image src={npm} name="Npm" />
           </Tech>
         </Border>
       </MeContainer>
@@ -164,7 +186,11 @@ function Me() {
             </Button>
           </ButtonContainer>
         </About>
+
         <Tech>
+          {/* <TechnoTitle>
+            <p>Technologie z których korzystam</p>
+          </TechnoTitle> */}
           <Image src={css} name="Css" />
           <Image src={html} name="Html" />
           <Image src={js} name="Js" />
@@ -175,6 +201,10 @@ function Me() {
           <Image src={figma} name="Figma" />
           <Image src={wp} name="Wordpress" />
           <Image src={redux} name="Redux" />
+          <Image src={mongodb} name="Mongodb" />
+          <Image src={node} name="Node" />
+          <Image src={ts} name="TypeScript" />
+          <Image src={npm} name="Npm" />
         </Tech>
       </Border>
     </MeContainer>

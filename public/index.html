@@ -19,6 +19,25 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <style>
+      .svgLoader {
+        animation: spin 1s linear infinite;
+        margin: auto;
+      }
+      .divLoader {
+        width: 98vw;
+        height: 98vh;
+        margin:0;
+        padding:0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    </style>
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -30,14 +49,20 @@
     -->
     <title>Patryk Kubala</title>
   </head>
-  <body>
+  <body style="background-color:#0D2938">
     <form name="contact" netlify netlify-honeypot="bot-field" hidden>
       <input name="email" type="email" />
       <textarea name="message"></textarea>
     </form>
 
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="root">
+      <div class="divLoader">
+        <img src="favicon.png" class="svgLoader" width="100px" height="100px">
+         
+        </img>
+
+    </div>
     <form name="contact" netlify netlify-honeypot="bot-field" hidden>
       <input type="email" name="email" />
       <textarea name="message"></textarea>

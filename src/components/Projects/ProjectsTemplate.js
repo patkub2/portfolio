@@ -8,7 +8,7 @@ const ProjectsTemplateContainer = styled.div`
   border: 2px solid #f77f00;
   box-sizing: border-box;
   border-radius: 20px;
-  min-height: 450px;
+  min-height: 500px;
   width: 370px;
   display: flex;
   font-size: 18px;
@@ -33,7 +33,7 @@ const ProjectsTitle = styled.p`
 const ProjectsText = styled.p`
   /*border: 1px solid yellow; /* RED*/
   font-size: 16px;
-  height: 160px;
+  height: 220px;
   padding: 0 12px;
 `;
 const TechnoDiv = styled.p`
@@ -133,9 +133,11 @@ function ProjectsTemplate(p) {
         <Overlay>
           <Text>
             <DivDiv>
-              <a href={p.livelink} target="_blank" rel="noopener noreferrer">
-                LIVE
-              </a>
+              {p.livelink ? (
+                <a href={p.livelink} target="_blank" rel="noopener noreferrer">
+                  LIVE
+                </a>
+              ) : null}
 
               <a href={p.githublink} target="_blank" rel="noopener noreferrer">
                 <img src={github} alt="github" />
