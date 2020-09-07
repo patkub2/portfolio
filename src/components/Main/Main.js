@@ -13,6 +13,8 @@ const MainContainer = styled.div`
   flex-flow: column wrap;
   z-index: 9;
   position: relative;
+  /* @media only screen and (max-height: 890px) {
+  } */
 `;
 
 const Img = styled.img`

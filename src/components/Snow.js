@@ -36,15 +36,15 @@ const SnowFlake = styled.p`
 `;
 
 const Cont = styled.div`
-  /*border: 1px solid yellow; /* RED*/
+  /*border: 1px solid red; /* RED*/
   position: absolute;
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  padding-top: 98vh;
+  padding-top: 100vh;
   overflow: hidden;
   z-index: 8;
-  height: 0vh;
+  height: 0px;
 `;
 
 const Snowflake = (props) => {
