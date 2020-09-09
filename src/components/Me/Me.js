@@ -102,7 +102,8 @@ function Me() {
               </Orange>{" "}
               I graduated from IT school in Racibórz, where I gained the
               necessary basic knowledge about computers, networks and
-              programming. A year ago I decided to delve into the world of
+              programming. From October I am starting extramural studies in
+              Computer Science. A year ago I decided to delve into the world of
               front-end development and to this day I am still fascinated by it,
               mainly thanks to the
               <Orange> React</Orange> library.
@@ -175,7 +176,8 @@ function Me() {
             </Orange>{" "}
             Ukończyłem technikum na kierunku Informatycznym w Raciborzu gdzie
             zdobyłem niezbędną podstawową wiedzę odnośnie komputerów, sieci i
-            programowania. Roku temu postanowiłem zagłębić się w front-end
+            programowania. Od października zaczynam studia zaoczne na kierunku
+            Informatyka. Roku temu postanowiłem zagłębić się w front-end
             developerkę i to w niej do dzisiaj się rozwijam korzystając głownie
             z biblioteki <Orange>React’a</Orange>.
           </p>
