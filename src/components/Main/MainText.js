@@ -20,6 +20,7 @@ const MainTextContainer = styled.div`
     rgba(13, 41, 56, 0.851852) 83.85%,
     rgba(13, 41, 56, 0) 100%
   );
+  opacity: 1;
 `;
 
 const Title = styled.p`

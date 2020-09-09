@@ -57,10 +57,9 @@ function Projects() {
             The latest project I'm still working on. Online store which will
             allow the customer to log in and add products to cart. Also a option
             to add new products from the administrator level.
-            <p>
-              <Orange>Live-Update:</Orange> Connecting the backend with the
-              frontend
-            </p>
+            <br />
+            <Orange>Live-Update:</Orange> Connecting the backend with the
+            frontend
           </ProjectsTemplate>
           <ProjectsTemplate
             title="Life cost"
@@ -145,9 +144,8 @@ function Projects() {
           Najnowszy projekt nad którym wciąż pracuję. Sklep internetowy który
           będzie pozwalał klientowi na zalogowanie się, dodawanie produktów do
           koszyka oraz dodawanie nowych produktów z poziomu administratora.
-          <p>
-            <Orange>Live-Update:</Orange> Łączenie backendu z frontendem
-          </p>
+          <br />
+          <Orange>Live-Update:</Orange> Łączenie backendu z frontendem
         </ProjectsTemplate>
         <ProjectsTemplate
           title="Life cost"

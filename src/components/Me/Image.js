@@ -38,6 +38,7 @@ function Image(p) {
   return (
     <ImgCont>
       <Img
+        className="icon"
         onMouseEnter={handleMouseHover}
         onMouseLeave={handleMouseHover}
         src={p.src}

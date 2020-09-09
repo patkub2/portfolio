@@ -121,7 +121,7 @@ function Email() {
     );
   }
   return (
-    <EmailContainer>
+    <EmailContainer className="contact">
       <Mail
         type="email"
         value="patrykkubala1999@gmail.com"

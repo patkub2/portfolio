@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import About from "./About";
 import Image from "./Image";
@@ -6,6 +6,7 @@ import Tech from "./Tech";
 import Orange from "../Orange";
 import Title from "../Title";
 import Border from "../Border";
+import { gsap } from "gsap";
 
 import css from "../../img/icons/css.png";
 import html from "../../img/icons/html.png";
@@ -26,6 +27,9 @@ import cv from "../../pdf/CV1.pdf";
 
 import { useSelector } from "react-redux";
 import Button from "./Button";
+
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 const MeContainer = styled.div`
   /*border: 1px solid yellow; /* RED*/
@@ -63,6 +67,26 @@ const ButtonContainer = styled.div`
 // `;
 
 function Me() {
+  useEffect(() => {
+    gsap.defaults({ ease: "power3" });
+    gsap.set(".icon", { y: 100 });
+
+    ScrollTrigger.batch(".icon", {
+      interval: 0.1, // time window (in seconds) for batching to occur.
+      //batchMax: 3,   // maximum batch size (targets)
+      onEnter: (batch) =>
+        gsap.to(batch, {
+          opacity: 1,
+          y: 0,
+          stagger: 0.1,
+          overwrite: true,
+        }),
+    });
+    ScrollTrigger.addEventListener("refreshInit", () =>
+      gsap.set(".box", { y: 0 })
+    );
+  }, []);
+
   const language = useSelector((state) => state);
   if (language) {
     return (
@@ -74,7 +98,7 @@ function Me() {
           <About>
             <p>
               <Orange>
-                Hi, I'm Patryk and I'm a Front-end Developer from Racibórz.
+                Hi, I'm Patryk and I'm a Front-end Developer from Gliwice.
               </Orange>{" "}
               I graduated from IT school in Racibórz, where I gained the
               necessary basic knowledge about computers, networks and
@@ -147,8 +171,7 @@ function Me() {
         <About>
           <p>
             <Orange>
-              Cześć mam na imię Patryk i jestem Front-end Developerem z
-              Raciborza.
+              Cześć mam na imię Patryk i jestem Front-end Developerem z Gliwic.
             </Orange>{" "}
             Ukończyłem technikum na kierunku Informatycznym w Raciborzu gdzie
             zdobyłem niezbędną podstawową wiedzę odnośnie komputerów, sieci i

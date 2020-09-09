@@ -36,7 +36,7 @@ const SnowFlake = styled.p`
 `;
 
 const Cont = styled.div`
-  border: 1px solid red; /* RED*/
+  /*border: 1px solid red; /* RED*/
   position: absolute;
   justify-content: space-between;
   margin: 0;
