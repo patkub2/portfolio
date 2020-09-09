@@ -3,15 +3,17 @@ import styled from "styled-components";
 import MainText from "./MainText";
 import comp from "../../img/comp.png";
 import Arrow from "./Arrow";
+import Snow from "../Snow";
 
 const MainContainer = styled.div`
   /*border: 1px solid yellow; /* RED*/
+  background-color: none;
   min-height: 90vh;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   flex-flow: column wrap;
-  z-index: 9;
+  z-index: 0;
   position: relative;
   /* @media only screen and (max-height: 890px) {
   } */
@@ -30,6 +32,7 @@ function Main() {
       <MainText />
       <Arrow />
       <Img src={comp} />
+      <Snow />
     </MainContainer>
   );
 }

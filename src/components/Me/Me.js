@@ -36,6 +36,7 @@ const MeContainer = styled.div`
   justify-content: space-around;
   flex-flow: wrap;
   background-color: ${({ theme }) => theme.colors.darker};
+  z-index: 90;
 `;
 
 const ButtonContainer = styled.div`

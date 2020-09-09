@@ -12,10 +12,12 @@ import Footer from "./Footer/Footer";
 function App() {
   return (
     <Layout>
+      {/* <Snow /> */}
       <Container>
-        <Snow />
         <NavBar />
+
         <Main />
+
         <Me />
         <Projects />
         <Contact />
