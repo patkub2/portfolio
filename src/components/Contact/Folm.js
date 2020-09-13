@@ -14,7 +14,7 @@ const FormContainer = styled.div`
     align-content: center;
     justify-content: center;
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 620px) {
       width: 100%;
     }
   }
@@ -118,6 +118,7 @@ class Folm extends React.Component {
             value={email}
             onChange={this.handleChange}
             placeholder={this.props.emailplaceholder}
+            required
           />
 
           <Message
@@ -125,6 +126,7 @@ class Folm extends React.Component {
             name="message"
             value={message}
             onChange={this.handleChange}
+            required
           />
 
           <Submit type="submit">{this.props.submitplaceholder}</Submit>

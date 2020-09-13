@@ -47,6 +47,7 @@ const ButtonContainer = styled.div`
   /*border: 1px solid yellow; /* RED*/
   display: flex;
   font-size: 18px;
+  width: 100%;
   align-items: center;
   justify-content: space-around;
   flex-flow: wrap;

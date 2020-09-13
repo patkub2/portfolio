@@ -8,14 +8,14 @@ const FormContainer = styled.div`
     /*border: 1px solid green; /* green*/
     margin: 0px;
     min-height: 450px;
-    width: 600px;
+    width: 590px;
     background-color: ${({ theme }) => theme.colors.darker};
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 620px) {
       width: 100%;
     }
   }

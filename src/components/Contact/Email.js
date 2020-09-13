@@ -20,7 +20,7 @@ const EmailContainer = styled.div`
   align-content: center;
   justify-content: center;
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 620px) {
     width: 100%;
   }
 `;
