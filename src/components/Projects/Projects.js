@@ -58,8 +58,10 @@ function Projects() {
             allow the customer to log in and add products to cart. Also a option
             to add new products from the administrator level.
             <br />
-            <Orange>Live-Update:</Orange> Connecting the backend with the
-            frontend
+            <Orange>Working on:</Orange> Front-end(Shop Page)
+            <br /> ✓ Log in system
+            <br /> ✓ Back-end
+            <br /> ✓ Front-end(Main Page)
           </ProjectsTemplate>
           <ProjectsTemplate
             title="Life cost"
@@ -84,12 +86,13 @@ function Projects() {
             tech1="react"
             tech2="redux"
             tech3="RWD"
+            tech3="GSAP"
             livelink="/"
             githublink="https://github.com/patkub2/portfolio"
           >
             Portfolio page made in react. Redux has been used to change the
-            language of the page without having to refresh it. Down styling I
-            used styled-components.
+            language of the page without having to refresh it. For styling I
+            used styled-components. Animations were made in GSAP.
           </ProjectsTemplate>
 
           <ProjectsTemplate
@@ -145,7 +148,10 @@ function Projects() {
           będzie pozwalał klientowi na zalogowanie się, dodawanie produktów do
           koszyka oraz dodawanie nowych produktów z poziomu administratora.
           <br />
-          <Orange>Live-Update:</Orange> Łączenie backendu z frontendem
+          <Orange>Pracuję nad:</Orange> Front-end(Shop Page)
+          <br /> ✓ Log in system
+          <br /> ✓ Back-end
+          <br /> ✓ Front-end(Main Page)
         </ProjectsTemplate>
         <ProjectsTemplate
           title="Life cost"
@@ -170,12 +176,13 @@ function Projects() {
           tech1="react"
           tech2="redux"
           tech3="RWD"
+          tech4="GSAP"
           livelink="/"
           githublink="https://github.com/patkub2/portfolio"
         >
           Strona portfolio wykonana w reactcie. Redux został wykorzystany do
           zmiany języka strony bez potrzeby odświeżania jej. Do stylowania
-          użyłem styled-components.
+          użyłem styled-components. Do animacji GSAP'a.
         </ProjectsTemplate>
 
         <ProjectsTemplate

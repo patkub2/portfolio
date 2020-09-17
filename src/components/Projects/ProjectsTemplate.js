@@ -44,6 +44,7 @@ const TechnoDiv = styled.p`
   flex-flow: wrap;
   margin: 10px;
   width: 100%;
+  padding-top: 20px;
 `;
 
 const Techno = styled.a`
