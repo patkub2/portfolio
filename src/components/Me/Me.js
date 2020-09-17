@@ -22,6 +22,7 @@ import node from "../../img/icons/node.png";
 import mongodb from "../../img/icons/mongodb.png";
 import ts from "../../img/icons/ts.png";
 import npm from "../../img/icons/npm.png";
+import gsapi from "../../img/icons/gsap.png";
 
 import cv from "../../pdf/CV1.pdf";
 
@@ -99,7 +100,7 @@ function Me() {
           <About>
             <p>
               <Orange>
-                Hi, I'm Patryk and I'm a Front-end Developer from Gliwice.
+                Hi, I'm Patryk and I'm a Front-end Developer from Raciborz.
               </Orange>{" "}
               I graduated from IT school in Racibórz, where I gained the
               necessary basic knowledge about computers, networks and
@@ -159,6 +160,7 @@ function Me() {
             <Image src={node} name="Node" />
             <Image src={ts} name="TypeScript" />
             <Image src={npm} name="Npm" />
+            <Image src={gsapi} name="Gsap" />
           </Tech>
         </Border>
       </MeContainer>
@@ -173,7 +175,8 @@ function Me() {
         <About>
           <p>
             <Orange>
-              Cześć mam na imię Patryk i jestem Front-end Developerem z Gliwic.
+              Cześć mam na imię Patryk i jestem Front-end Developerem z
+              Raciborza.
             </Orange>{" "}
             Ukończyłem technikum na kierunku Informatycznym w Raciborzu gdzie
             zdobyłem niezbędną podstawową wiedzę odnośnie komputerów, sieci i
@@ -232,6 +235,7 @@ function Me() {
           <Image src={node} name="Node" />
           <Image src={ts} name="TypeScript" />
           <Image src={npm} name="Npm" />
+          <Image src={gsapi} name="Gsap" />
         </Tech>
       </Border>
     </MeContainer>
