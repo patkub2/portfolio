@@ -24,7 +24,7 @@ import ts from "../../img/icons/ts.png";
 import npm from "../../img/icons/npm.png";
 import gsapi from "../../img/icons/gsap.png";
 
-import cv from "../../pdf/CV1.pdf";
+import cv from "../../pdf/CV.pdf";
 
 import { useSelector } from "react-redux";
 import Button from "./Button";
