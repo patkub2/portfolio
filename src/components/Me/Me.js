@@ -71,7 +71,8 @@ const ButtonContainer = styled.div`
 function Me() {
   useEffect(() => {
     gsap.defaults({ ease: "power3" });
-    gsap.set(".icon", { y: 100 });
+    gsap.set(".icon", { y: 50, opacity: 0 });
+    gsap.set(".about", { y: 0, opacity: 0 });
 
     ScrollTrigger.batch(".icon", {
       interval: 0.1, // time window (in seconds) for batching to occur.
@@ -80,7 +81,17 @@ function Me() {
         gsap.to(batch, {
           opacity: 1,
           y: 0,
-          stagger: 0.1,
+          stagger: 0.05,
+          overwrite: true,
+        }),
+    });
+    ScrollTrigger.batch(".about", {
+      interval: 0.5, // time window (in seconds) for batching to occur.
+      //batchMax: 3,   // maximum batch size (targets)
+      onEnter: (batch) =>
+        gsap.to(batch, {
+          opacity: 1,
+          y: 0,
           overwrite: true,
         }),
     });
@@ -97,7 +108,7 @@ function Me() {
           About <Orange>me</Orange>
         </Title>
         <Border>
-          <About>
+          <About className="about">
             <p>
               <Orange>
                 Hi, I'm Patryk and I'm a Front-end Developer from Raciborz.
@@ -172,7 +183,7 @@ function Me() {
         O <Orange>mnie</Orange>
       </Title>
       <Border>
-        <About>
+        <About className="about">
           <p>
             <Orange>
               Cześć mam na imię Patryk i jestem Front-end Developerem z
